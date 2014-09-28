@@ -7,11 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0013C85A19BC5E0E0034C233 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0BB199EA87B00342453 /* TestViewController.swift */; };
+		0013C85C19BC61120034C233 /* lekcija9.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0013C85B19BC61120034C233 /* lekcija9.txt */; };
+		0013C85D19BC61120034C233 /* lekcija9.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0013C85B19BC61120034C233 /* lekcija9.txt */; };
 		0028D0BA199EA87B00342453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0B9199EA87B00342453 /* AppDelegate.swift */; };
-		0028D0BC199EA87B00342453 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0BB199EA87B00342453 /* ViewController.swift */; };
+		0028D0BC199EA87B00342453 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0BB199EA87B00342453 /* TestViewController.swift */; };
 		0028D0BF199EA87B00342453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0028D0BD199EA87B00342453 /* Main.storyboard */; };
 		0028D0C1199EA87B00342453 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0028D0C0199EA87B00342453 /* Images.xcassets */; };
 		0028D0CD199EA87B00342453 /* VokabularTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0CC199EA87B00342453 /* VokabularTests.swift */; };
+		0028D0DA199EA8E000342453 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0D9199EA8E000342453 /* Word.swift */; };
+		0028D0DB199EA8E000342453 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0D9199EA8E000342453 /* Word.swift */; };
+		0028D0DD199EAB2800342453 /* WordParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0DC199EAB2800342453 /* WordParser.swift */; };
+		0028D0DE199EAB2800342453 /* WordParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0DC199EAB2800342453 /* WordParser.swift */; };
+		0028D0E0199EACEC00342453 /* lekcija8.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0028D0DF199EACEC00342453 /* lekcija8.txt */; };
+		0028D0E1199EACEC00342453 /* lekcija8.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0028D0DF199EACEC00342453 /* lekcija8.txt */; };
+		0028D0E3199EB92D00342453 /* WordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0E2199EB92D00342453 /* WordGenerator.swift */; };
+		0028D0E4199EB92D00342453 /* WordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0E2199EB92D00342453 /* WordGenerator.swift */; };
+		006DE58019D75C7A006D7A2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006DE57F19D75C7A006D7A2F /* UIKit.framework */; };
+		006DE58219D8AF5E006D7A2F /* lekcija11.txt in Resources */ = {isa = PBXBuildFile; fileRef = 006DE58119D8AF5E006D7A2F /* lekcija11.txt */; };
+		006DE58319D8AF5E006D7A2F /* lekcija11.txt in Resources */ = {isa = PBXBuildFile; fileRef = 006DE58119D8AF5E006D7A2F /* lekcija11.txt */; };
+		008AAA2E19B3AF3900FD98EA /* index.plist in Resources */ = {isa = PBXBuildFile; fileRef = 008AAA2D19B3AF3900FD98EA /* index.plist */; };
+		008AAA2F19B3AF3900FD98EA /* index.plist in Resources */ = {isa = PBXBuildFile; fileRef = 008AAA2D19B3AF3900FD98EA /* index.plist */; };
+		0090303119D71DFA00849265 /* LineGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090303019D71DFA00849265 /* LineGraphViewController.swift */; };
+		0090303219D71DFA00849265 /* LineGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090303019D71DFA00849265 /* LineGraphViewController.swift */; };
+		0094FF6E19BB4680004CEACE /* TestSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094FF6D19BB4680004CEACE /* TestSelectorViewController.swift */; };
+		0094FF6F19BB4680004CEACE /* TestSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094FF6D19BB4680004CEACE /* TestSelectorViewController.swift */; };
+		00A7391F19C47AD700475E11 /* lekcija10.txt in Resources */ = {isa = PBXBuildFile; fileRef = 00A7391D19C47AD700475E11 /* lekcija10.txt */; };
+		00A7392019C47AD700475E11 /* lekcija10.txt in Resources */ = {isa = PBXBuildFile; fileRef = 00A7391D19C47AD700475E11 /* lekcija10.txt */; };
+		00A7392119C47AD700475E11 /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A7391E19C47AD700475E11 /* TemplateIcon2x.png */; };
+		00A7392219C47AD700475E11 /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A7391E19C47AD700475E11 /* TemplateIcon2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,15 +49,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0013C85B19BC61120034C233 /* lekcija9.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lekcija9.txt; sourceTree = "<group>"; };
 		0028D0B4199EA87B00342453 /* Vokabular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vokabular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0028D0B8199EA87B00342453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0028D0B9199EA87B00342453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0028D0BB199EA87B00342453 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0028D0BB199EA87B00342453 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		0028D0BE199EA87B00342453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0028D0C0199EA87B00342453 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0028D0C6199EA87B00342453 /* VokabularTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VokabularTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0028D0CB199EA87B00342453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0028D0CC199EA87B00342453 /* VokabularTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VokabularTests.swift; sourceTree = "<group>"; };
+		0028D0D9199EA8E000342453 /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		0028D0DC199EAB2800342453 /* WordParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordParser.swift; sourceTree = "<group>"; };
+		0028D0DF199EACEC00342453 /* lekcija8.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lekcija8.txt; sourceTree = "<group>"; };
+		0028D0E2199EB92D00342453 /* WordGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordGenerator.swift; sourceTree = "<group>"; };
+		006DE57F19D75C7A006D7A2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		006DE58119D8AF5E006D7A2F /* lekcija11.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lekcija11.txt; sourceTree = "<group>"; };
+		008AAA2D19B3AF3900FD98EA /* index.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = index.plist; sourceTree = "<group>"; };
+		0090303019D71DFA00849265 /* LineGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineGraphViewController.swift; sourceTree = "<group>"; };
+		0094FF6D19BB4680004CEACE /* TestSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSelectorViewController.swift; sourceTree = "<group>"; };
+		00A7391D19C47AD700475E11 /* lekcija10.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lekcija10.txt; sourceTree = "<group>"; };
+		00A7391E19C47AD700475E11 /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				006DE58019D75C7A006D7A2F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +94,7 @@
 		0028D0AB199EA87B00342453 = {
 			isa = PBXGroup;
 			children = (
+				006DE57F19D75C7A006D7A2F /* UIKit.framework */,
 				0028D0B6199EA87B00342453 /* Vokabular */,
 				0028D0C9199EA87B00342453 /* VokabularTests */,
 				0028D0B5199EA87B00342453 /* Products */,
@@ -75,8 +113,10 @@
 		0028D0B6199EA87B00342453 /* Vokabular */ = {
 			isa = PBXGroup;
 			children = (
+				0028D0D8199EA8A100342453 /* Views */,
+				0028D0D7199EA89700342453 /* Controllers */,
+				0028D0D6199EA88C00342453 /* Models */,
 				0028D0B9199EA87B00342453 /* AppDelegate.swift */,
-				0028D0BB199EA87B00342453 /* ViewController.swift */,
 				0028D0BD199EA87B00342453 /* Main.storyboard */,
 				0028D0C0199EA87B00342453 /* Images.xcassets */,
 				0028D0B7199EA87B00342453 /* Supporting Files */,
@@ -88,6 +128,12 @@
 			isa = PBXGroup;
 			children = (
 				0028D0B8199EA87B00342453 /* Info.plist */,
+				0028D0DF199EACEC00342453 /* lekcija8.txt */,
+				0013C85B19BC61120034C233 /* lekcija9.txt */,
+				00A7391D19C47AD700475E11 /* lekcija10.txt */,
+				006DE58119D8AF5E006D7A2F /* lekcija11.txt */,
+				00A7391E19C47AD700475E11 /* TemplateIcon2x.png */,
+				008AAA2D19B3AF3900FD98EA /* index.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -107,6 +153,33 @@
 				0028D0CB199EA87B00342453 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0028D0D6199EA88C00342453 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0028D0D9199EA8E000342453 /* Word.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0028D0D7199EA89700342453 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0028D0DC199EAB2800342453 /* WordParser.swift */,
+				0028D0E2199EB92D00342453 /* WordGenerator.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		0028D0D8199EA8A100342453 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0028D0BB199EA87B00342453 /* TestViewController.swift */,
+				0094FF6D19BB4680004CEACE /* TestSelectorViewController.swift */,
+				0090303019D71DFA00849265 /* LineGraphViewController.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,8 +262,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				006DE58219D8AF5E006D7A2F /* lekcija11.txt in Resources */,
+				0013C85C19BC61120034C233 /* lekcija9.txt in Resources */,
 				0028D0BF199EA87B00342453 /* Main.storyboard in Resources */,
+				008AAA2E19B3AF3900FD98EA /* index.plist in Resources */,
+				00A7391F19C47AD700475E11 /* lekcija10.txt in Resources */,
+				0028D0E0199EACEC00342453 /* lekcija8.txt in Resources */,
 				0028D0C1199EA87B00342453 /* Images.xcassets in Resources */,
+				00A7392119C47AD700475E11 /* TemplateIcon2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +277,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A7392219C47AD700475E11 /* TemplateIcon2x.png in Resources */,
+				0028D0E1199EACEC00342453 /* lekcija8.txt in Resources */,
+				006DE58319D8AF5E006D7A2F /* lekcija11.txt in Resources */,
+				00A7392019C47AD700475E11 /* lekcija10.txt in Resources */,
+				0013C85D19BC61120034C233 /* lekcija9.txt in Resources */,
+				008AAA2F19B3AF3900FD98EA /* index.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,8 +293,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0028D0BC199EA87B00342453 /* ViewController.swift in Sources */,
+				0094FF6E19BB4680004CEACE /* TestSelectorViewController.swift in Sources */,
+				0028D0E3199EB92D00342453 /* WordGenerator.swift in Sources */,
+				0090303119D71DFA00849265 /* LineGraphViewController.swift in Sources */,
+				0028D0DD199EAB2800342453 /* WordParser.swift in Sources */,
+				0028D0BC199EA87B00342453 /* TestViewController.swift in Sources */,
 				0028D0BA199EA87B00342453 /* AppDelegate.swift in Sources */,
+				0028D0DA199EA8E000342453 /* Word.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +307,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0028D0DE199EAB2800342453 /* WordParser.swift in Sources */,
+				0028D0E4199EB92D00342453 /* WordGenerator.swift in Sources */,
+				0090303219D71DFA00849265 /* LineGraphViewController.swift in Sources */,
 				0028D0CD199EA87B00342453 /* VokabularTests.swift in Sources */,
+				0094FF6F19BB4680004CEACE /* TestSelectorViewController.swift in Sources */,
+				0013C85A19BC5E0E0034C233 /* TestViewController.swift in Sources */,
+				0028D0DB199EA8E000342453 /* Word.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +423,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BSGraphKit-dxrfhmrjnalzwxfxcqmmolkjkwan/Build/Products/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Vokabular/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -338,7 +439,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BSGraphKit-dxrfhmrjnalzwxfxcqmmolkjkwan/Build/Products/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = Vokabular/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -351,6 +457,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BSGraphKit-dxrfhmrjnalzwxfxcqmmolkjkwan/Build/Products/Debug-iphoneos",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -370,6 +477,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BSGraphKit-dxrfhmrjnalzwxfxcqmmolkjkwan/Build/Products/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = VokabularTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -397,6 +505,7 @@
 				0028D0D2199EA87B00342453 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0028D0D3199EA87B00342453 /* Build configuration list for PBXNativeTarget "VokabularTests" */ = {
 			isa = XCConfigurationList;
@@ -405,6 +514,7 @@
 				0028D0D5199EA87B00342453 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

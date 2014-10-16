@@ -10,6 +10,8 @@
 		0013C85A19BC5E0E0034C233 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0BB199EA87B00342453 /* TestViewController.swift */; };
 		0013C85C19BC61120034C233 /* lekcija9.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0013C85B19BC61120034C233 /* lekcija9.txt */; };
 		0013C85D19BC61120034C233 /* lekcija9.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0013C85B19BC61120034C233 /* lekcija9.txt */; };
+		001BBD2F19E1E286006A955C /* lekcija12.txt in Resources */ = {isa = PBXBuildFile; fileRef = 001BBD2E19E1E286006A955C /* lekcija12.txt */; };
+		001BBD3019E1E286006A955C /* lekcija12.txt in Resources */ = {isa = PBXBuildFile; fileRef = 001BBD2E19E1E286006A955C /* lekcija12.txt */; };
 		0028D0BA199EA87B00342453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0B9199EA87B00342453 /* AppDelegate.swift */; };
 		0028D0BC199EA87B00342453 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0BB199EA87B00342453 /* TestViewController.swift */; };
 		0028D0BF199EA87B00342453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0028D0BD199EA87B00342453 /* Main.storyboard */; };
@@ -50,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		0013C85B19BC61120034C233 /* lekcija9.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lekcija9.txt; sourceTree = "<group>"; };
+		001BBD2E19E1E286006A955C /* lekcija12.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lekcija12.txt; sourceTree = "<group>"; };
 		0028D0B4199EA87B00342453 /* Vokabular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vokabular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0028D0B8199EA87B00342453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0028D0B9199EA87B00342453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +135,7 @@
 				0013C85B19BC61120034C233 /* lekcija9.txt */,
 				00A7391D19C47AD700475E11 /* lekcija10.txt */,
 				006DE58119D8AF5E006D7A2F /* lekcija11.txt */,
+				001BBD2E19E1E286006A955C /* lekcija12.txt */,
 				00A7391E19C47AD700475E11 /* TemplateIcon2x.png */,
 				008AAA2D19B3AF3900FD98EA /* index.plist */,
 			);
@@ -264,6 +268,7 @@
 			files = (
 				006DE58219D8AF5E006D7A2F /* lekcija11.txt in Resources */,
 				0013C85C19BC61120034C233 /* lekcija9.txt in Resources */,
+				001BBD2F19E1E286006A955C /* lekcija12.txt in Resources */,
 				0028D0BF199EA87B00342453 /* Main.storyboard in Resources */,
 				008AAA2E19B3AF3900FD98EA /* index.plist in Resources */,
 				00A7391F19C47AD700475E11 /* lekcija10.txt in Resources */,
@@ -282,6 +287,7 @@
 				006DE58319D8AF5E006D7A2F /* lekcija11.txt in Resources */,
 				00A7392019C47AD700475E11 /* lekcija10.txt in Resources */,
 				0013C85D19BC61120034C233 /* lekcija9.txt in Resources */,
+				001BBD3019E1E286006A955C /* lekcija12.txt in Resources */,
 				008AAA2F19B3AF3900FD98EA /* index.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

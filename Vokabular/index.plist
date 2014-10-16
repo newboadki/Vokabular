@@ -30,5 +30,12 @@
 		<key>fileName</key>
 		<string>lekcija11.txt</string>
 	</dict>
+	<key>lekcija12</key>
+	<dict>
+		<key>displayName</key>
+		<string>lekcija12</string>
+		<key>fileName</key>
+		<string>lekcija12.txt</string>
+	</dict>
 </dict>
 </plist>

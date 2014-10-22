@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import BSGraphKit
 
 class TestSelectorViewController: UITableViewController
 {
@@ -45,14 +44,13 @@ class TestSelectorViewController: UITableViewController
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        var graph : LineGraph
         return self.indexDictionary.allKeys.count
     }
 
     
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath)
     {
-        cell.textLabel?.text = self.indexDictionary.allKeys[indexPath.row] as String
+        cell.textLabel.text = self.indexDictionary.allKeys[indexPath.row] as String
         
     }
     

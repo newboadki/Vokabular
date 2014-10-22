@@ -27,14 +27,14 @@ class WordParser
         
         if (path != nil)
         {
-            let fileContent = NSString.stringWithContentsOfFile(path!, encoding: NSUTF8StringEncoding, error: error)
-            let lines = fileContent.componentsSeparatedByString("\n") // Returns an array of AnyObject
+            let fileContent = String(contentsOfFile: path!, encoding:NSUTF8StringEncoding, error: error)
+            let lines = fileContent?.componentsSeparatedByString("\n") // Returns an array of AnyObject
             
-            for line in lines
+            for line in lines!
             {
                 var lineComponents = line.componentsSeparatedByString(":")
-                var name : String = lineComponents[0].description
-                var synonymsString : String = lineComponents[1].description
+                var name : String = lineComponents[0]
+                var synonymsString : String = lineComponents[1]
                 var synonyms = synonymsString.componentsSeparatedByString(",")
                 var word = Word(name: name, synonyms: synonyms)
                 words.append(word)
@@ -49,8 +49,9 @@ class WordParser
     {
         let indexFilePath : NSString? = NSBundle.mainBundle().pathForResource("index", ofType: "plist")
         assert(indexFilePath != nil, "Couldn't load the index file")
+        let dictionry = NSDictionary(contentsOfFile: indexFilePath!)
         
-        return NSDictionary(contentsOfFile: indexFilePath!)
+        return dictionry!
     }
     
 }

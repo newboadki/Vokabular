@@ -2,6 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>lekcija6</key>
+	<dict>
+		<key>displayName</key>
+		<string>Lekcija 6</string>
+		<key>fileName</key>
+		<string>lekcija6.txt</string>
+	</dict>
 	<key>lekcija8</key>
 	<dict>
 		<key>displayName</key>

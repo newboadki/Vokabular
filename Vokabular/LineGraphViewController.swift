@@ -7,9 +7,9 @@
 //
 
 import UIKit
-import BSGraphKit
 
-class LineGraphViewController: UIViewController, LineGraphDataSourceProtocol {
+
+class LineGraphViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -20,6 +20,7 @@ class TestViewController: UIViewController
     var previousWord : Word?
     var numberOfHits : Int = 0
     var total : Int = 0
+    var count : Int = 0
     var selectedKey : String?
     
     required init(coder aDecoder: (NSCoder!)) {
@@ -33,10 +34,13 @@ class TestViewController: UIViewController
         var parser = WordParser()
         var words = parser.parseWordsFromFileWithIndexKey(self.selectedKey!)
         self.total = words.count
+        self.count = 1
         self.wordGenerator = WordGenerator(words: words, numberOfWordsToGenerate: total)
         self.currentWord = self.wordGenerator!.nextWord()!
         self.title = self.selectedKey!
-        // Create the generator
+
+        
+        self.navigationItem.rightBarButtonItem?.title = "\(self.count)/\(self.total)"
     }
     
     override func viewWillAppear(animated: Bool)
@@ -89,12 +93,34 @@ class TestViewController: UIViewController
                 self.wording.text = "Score"
                 self.originalWordLabel.text = self.numberOfHits.description + " / " + self.total.description
             }
+            
+            self.count += 1
+            self.navigationItem.rightBarButtonItem?.title = "\(self.count)/\(self.total)"
         }
         else
         {
             self.previousWord = self.currentWord // Store the old one
             self.correctSolutionLabel.text = correctAnswer
-            self.finalWordTextField.textColor = UIColor.redColor()            
+            
+            UIView.animateKeyframesWithDuration(0.2, delay: 0, options: .Autoreverse, animations: { () -> Void in
+                
+                UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 0.5, animations: { () -> Void in
+                    var frame = self.finalWordTextField.frame
+                    frame.origin.x -= 20
+                    self.finalWordTextField.frame = frame
+                });
+
+                UIView.addKeyframeWithRelativeStartTime(0.5, relativeDuration: 0.5, animations: { () -> Void in
+                    var frame = self.finalWordTextField.frame
+                    frame.origin.x += 20
+                    self.finalWordTextField.frame = frame
+                });
+
+                
+            }, completion: nil)
+            
+
+            self.finalWordTextField.textColor = UIColor.redColor()
         }
         
         

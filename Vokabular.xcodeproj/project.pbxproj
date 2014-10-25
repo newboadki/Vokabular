@@ -17,14 +17,8 @@
 		0028D0BF199EA87B00342453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0028D0BD199EA87B00342453 /* Main.storyboard */; };
 		0028D0C1199EA87B00342453 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0028D0C0199EA87B00342453 /* Images.xcassets */; };
 		0028D0CD199EA87B00342453 /* VokabularTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0CC199EA87B00342453 /* VokabularTests.swift */; };
-		0028D0DA199EA8E000342453 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0D9199EA8E000342453 /* Word.swift */; };
-		0028D0DB199EA8E000342453 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0D9199EA8E000342453 /* Word.swift */; };
-		0028D0DD199EAB2800342453 /* WordParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0DC199EAB2800342453 /* WordParser.swift */; };
-		0028D0DE199EAB2800342453 /* WordParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0DC199EAB2800342453 /* WordParser.swift */; };
 		0028D0E0199EACEC00342453 /* lekcija8.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0028D0DF199EACEC00342453 /* lekcija8.txt */; };
 		0028D0E1199EACEC00342453 /* lekcija8.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0028D0DF199EACEC00342453 /* lekcija8.txt */; };
-		0028D0E3199EB92D00342453 /* WordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0E2199EB92D00342453 /* WordGenerator.swift */; };
-		0028D0E4199EB92D00342453 /* WordGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0E2199EB92D00342453 /* WordGenerator.swift */; };
 		0049E43F19F6398C00775EA7 /* lekcija6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0049E43E19F6398C00775EA7 /* lekcija6.txt */; };
 		0049E44019F6398C00775EA7 /* lekcija6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0049E43E19F6398C00775EA7 /* lekcija6.txt */; };
 		006DE58019D75C7A006D7A2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006DE57F19D75C7A006D7A2F /* UIKit.framework */; };
@@ -40,6 +34,7 @@
 		00A7392019C47AD700475E11 /* lekcija10.txt in Resources */ = {isa = PBXBuildFile; fileRef = 00A7391D19C47AD700475E11 /* lekcija10.txt */; };
 		00A7392119C47AD700475E11 /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A7391E19C47AD700475E11 /* TemplateIcon2x.png */; };
 		00A7392219C47AD700475E11 /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A7391E19C47AD700475E11 /* TemplateIcon2x.png */; };
+		00EEAFCF19F97CDD006E2ADA /* CoreVokabular.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00EEAFCE19F97CDD006E2ADA /* CoreVokabular.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +46,20 @@
 			remoteInfo = Vokabular;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		00EEAF8519F979E8006E2ADA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				00EEAFCF19F97CDD006E2ADA /* CoreVokabular.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0013C85B19BC61120034C233 /* lekcija9.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lekcija9.txt; sourceTree = "<group>"; };
@@ -64,10 +73,7 @@
 		0028D0C6199EA87B00342453 /* VokabularTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VokabularTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0028D0CB199EA87B00342453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0028D0CC199EA87B00342453 /* VokabularTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VokabularTests.swift; sourceTree = "<group>"; };
-		0028D0D9199EA8E000342453 /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
-		0028D0DC199EAB2800342453 /* WordParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordParser.swift; sourceTree = "<group>"; };
 		0028D0DF199EACEC00342453 /* lekcija8.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lekcija8.txt; sourceTree = "<group>"; };
-		0028D0E2199EB92D00342453 /* WordGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordGenerator.swift; sourceTree = "<group>"; };
 		0049E43E19F6398C00775EA7 /* lekcija6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lekcija6.txt; sourceTree = "<group>"; };
 		006DE57F19D75C7A006D7A2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		006DE58119D8AF5E006D7A2F /* lekcija11.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lekcija11.txt; sourceTree = "<group>"; };
@@ -76,6 +82,7 @@
 		0094FF6D19BB4680004CEACE /* TestSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSelectorViewController.swift; sourceTree = "<group>"; };
 		00A7391D19C47AD700475E11 /* lekcija10.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lekcija10.txt; sourceTree = "<group>"; };
 		00A7391E19C47AD700475E11 /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
+		00EEAFCE19F97CDD006E2ADA /* CoreVokabular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreVokabular.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +107,7 @@
 		0028D0AB199EA87B00342453 = {
 			isa = PBXGroup;
 			children = (
+				00EEAFCE19F97CDD006E2ADA /* CoreVokabular.framework */,
 				006DE57F19D75C7A006D7A2F /* UIKit.framework */,
 				0028D0B6199EA87B00342453 /* Vokabular */,
 				0028D0C9199EA87B00342453 /* VokabularTests */,
@@ -120,8 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				0028D0D8199EA8A100342453 /* Views */,
-				0028D0D7199EA89700342453 /* Controllers */,
-				0028D0D6199EA88C00342453 /* Models */,
 				0028D0B9199EA87B00342453 /* AppDelegate.swift */,
 				0028D0BD199EA87B00342453 /* Main.storyboard */,
 				0028D0C0199EA87B00342453 /* Images.xcassets */,
@@ -163,23 +169,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0028D0D6199EA88C00342453 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				0028D0D9199EA8E000342453 /* Word.swift */,
-			);
-			name = Models;
-			sourceTree = "<group>";
-		};
-		0028D0D7199EA89700342453 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				0028D0DC199EAB2800342453 /* WordParser.swift */,
-				0028D0E2199EB92D00342453 /* WordGenerator.swift */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
 		0028D0D8199EA8A100342453 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +189,7 @@
 				0028D0B0199EA87B00342453 /* Sources */,
 				0028D0B1199EA87B00342453 /* Frameworks */,
 				0028D0B2199EA87B00342453 /* Resources */,
+				00EEAF8519F979E8006E2ADA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -306,12 +296,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0094FF6E19BB4680004CEACE /* TestSelectorViewController.swift in Sources */,
-				0028D0E3199EB92D00342453 /* WordGenerator.swift in Sources */,
 				0090303119D71DFA00849265 /* LineGraphViewController.swift in Sources */,
-				0028D0DD199EAB2800342453 /* WordParser.swift in Sources */,
 				0028D0BC199EA87B00342453 /* TestViewController.swift in Sources */,
 				0028D0BA199EA87B00342453 /* AppDelegate.swift in Sources */,
-				0028D0DA199EA8E000342453 /* Word.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,13 +306,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0028D0DE199EAB2800342453 /* WordParser.swift in Sources */,
-				0028D0E4199EB92D00342453 /* WordGenerator.swift in Sources */,
 				0090303219D71DFA00849265 /* LineGraphViewController.swift in Sources */,
 				0028D0CD199EA87B00342453 /* VokabularTests.swift in Sources */,
 				0094FF6F19BB4680004CEACE /* TestSelectorViewController.swift in Sources */,
 				0013C85A19BC5E0E0034C233 /* TestViewController.swift in Sources */,
-				0028D0DB199EA8E000342453 /* Word.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,10 +421,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BSGraphKit-dxrfhmrjnalzwxfxcqmmolkjkwan/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)/Vokabular",
 				);
 				INFOPLIST_FILE = Vokabular/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -453,10 +437,10 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BSGraphKit-dxrfhmrjnalzwxfxcqmmolkjkwan/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)/Vokabular",
 				);
 				INFOPLIST_FILE = Vokabular/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -470,6 +454,8 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BSGraphKit-dxrfhmrjnalzwxfxcqmmolkjkwan/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)/Vokabular/Dependencies",
+					"$(PROJECT_DIR)/Vokabular",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -490,6 +476,8 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BSGraphKit-dxrfhmrjnalzwxfxcqmmolkjkwan/Build/Products/Debug-iphoneos",
+					"$(PROJECT_DIR)/Vokabular/Dependencies",
+					"$(PROJECT_DIR)/Vokabular",
 				);
 				INFOPLIST_FILE = VokabularTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";

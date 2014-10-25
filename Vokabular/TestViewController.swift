@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreVokabular
 
 class TestViewController: UIViewController
 {
@@ -15,9 +16,9 @@ class TestViewController: UIViewController
     @IBOutlet weak var finalWordTextField : UITextField!
     @IBOutlet weak var correctSolutionLabel : UILabel!
     
-    var wordGenerator : WordGenerator?
-    var currentWord : Word?
-    var previousWord : Word?
+    var wordGenerator : CoreVokabular.WordGenerator?
+    var currentWord : CoreVokabular.Word?
+    var previousWord : CoreVokabular.Word?
     var numberOfHits : Int = 0
     var total : Int = 0
     var count : Int = 0
@@ -31,11 +32,11 @@ class TestViewController: UIViewController
     {
         super.viewDidLoad()
         
-        var parser = WordParser()
+        var parser = CoreVokabular.WordParser()
         var words = parser.parseWordsFromFileWithIndexKey(self.selectedKey!)
         self.total = words.count
         self.count = 1
-        self.wordGenerator = WordGenerator(words: words, numberOfWordsToGenerate: total)
+        self.wordGenerator = CoreVokabular.WordGenerator(words: words, numberOfWordsToGenerate: total)
         self.currentWord = self.wordGenerator!.nextWord()!
         self.title = self.selectedKey!
 
@@ -102,7 +103,7 @@ class TestViewController: UIViewController
             self.previousWord = self.currentWord // Store the old one
             self.correctSolutionLabel.text = correctAnswer
             
-            UIView.animateKeyframesWithDuration(0.2, delay: 0, options: .Autoreverse, animations: { () -> Void in
+            UIView.animateKeyframesWithDuration(0.15, delay: 0, options: .Autoreverse, animations: { () -> Void in
                 
                 UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 0.5, animations: { () -> Void in
                     var frame = self.finalWordTextField.frame

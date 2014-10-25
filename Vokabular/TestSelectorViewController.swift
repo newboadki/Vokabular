@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreVokabular
 
 class TestSelectorViewController: UITableViewController
 {

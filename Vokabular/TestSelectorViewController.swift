@@ -12,12 +12,12 @@ import CoreVokabular
 class TestSelectorViewController: UITableViewController
 {
 
-    let indexDictionary : NSDictionary
+    let index : NSArray
     
     
     required init(coder aDecoder: NSCoder)
     {
-        self.indexDictionary = WordParser.lessonsIndexDictionary()
+        self.index = WordParser.lessonsIndexArray()
         super.init(coder:aDecoder)
     }
 
@@ -45,13 +45,23 @@ class TestSelectorViewController: UITableViewController
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return self.indexDictionary.allKeys.count
+        return self.index.count
     }
 
     
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath)
     {
-        cell.textLabel.text = self.indexDictionary.allKeys[indexPath.row] as String
+        var lesson : NSDictionary = (self.index[indexPath.row] as NSDictionary)
+        
+//        var orderedKeys = sorted(keys, {(s1:String, s2:String) -> Bool in return s1<s2  } )
+
+        var numberStrings = ["8", "11", "5", "9", "6", "10", "1", "3", "12"]
+        var orderedNumberStrings = sorted(numberStrings, {(s1:String, s2:String) -> Bool in return s1<s2  } )
+
+
+        
+        
+        cell.textLabel.text = (lesson["displayName"] as String)
         
     }
     
@@ -77,7 +87,7 @@ class TestSelectorViewController: UITableViewController
         let myVC = segue.destinationViewController as TestViewController
 
         
-         myVC.selectedKey = self.indexDictionary.allKeys[indexPath!.row] as String
+         myVC.selectedLesson = (self.index[indexPath!.row] as Dictionary<String, String>)
         
         
     }

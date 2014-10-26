@@ -22,7 +22,7 @@ class TestViewController: UIViewController
     var numberOfHits : Int = 0
     var total : Int = 0
     var count : Int = 0
-    var selectedKey : String?
+    var selectedLesson : Dictionary<String, String>?
     
     required init(coder aDecoder: (NSCoder!)) {
         super.init(coder: aDecoder)
@@ -33,12 +33,12 @@ class TestViewController: UIViewController
         super.viewDidLoad()
         
         var parser = CoreVokabular.WordParser()
-        var words = parser.parseWordsFromFileWithIndexKey(self.selectedKey!)
+        var words = parser.parseWordsFromFileWithIndexKey(self.selectedLesson!["fileName"]!)
         self.total = words.count
         self.count = 1
         self.wordGenerator = CoreVokabular.WordGenerator(words: words, numberOfWordsToGenerate: total)
         self.currentWord = self.wordGenerator!.nextWord()!
-        self.title = self.selectedKey!
+        self.title = self.selectedLesson!["displayName"]
 
         
         self.navigationItem.rightBarButtonItem?.title = "\(self.count)/\(self.total)"

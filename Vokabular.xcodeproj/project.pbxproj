@@ -8,33 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		0013C85A19BC5E0E0034C233 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0BB199EA87B00342453 /* TestViewController.swift */; };
-		0013C85C19BC61120034C233 /* lekcija9.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0013C85B19BC61120034C233 /* lekcija9.txt */; };
-		0013C85D19BC61120034C233 /* lekcija9.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0013C85B19BC61120034C233 /* lekcija9.txt */; };
-		001BBD2F19E1E286006A955C /* lekcija12.txt in Resources */ = {isa = PBXBuildFile; fileRef = 001BBD2E19E1E286006A955C /* lekcija12.txt */; };
-		001BBD3019E1E286006A955C /* lekcija12.txt in Resources */ = {isa = PBXBuildFile; fileRef = 001BBD2E19E1E286006A955C /* lekcija12.txt */; };
+		0020EDF919FDA48000229CAC /* CoreVokabular.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0020EDF819FDA48000229CAC /* CoreVokabular.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0028D0BA199EA87B00342453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0B9199EA87B00342453 /* AppDelegate.swift */; };
 		0028D0BC199EA87B00342453 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0BB199EA87B00342453 /* TestViewController.swift */; };
 		0028D0BF199EA87B00342453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0028D0BD199EA87B00342453 /* Main.storyboard */; };
 		0028D0C1199EA87B00342453 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0028D0C0199EA87B00342453 /* Images.xcassets */; };
 		0028D0CD199EA87B00342453 /* VokabularTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0CC199EA87B00342453 /* VokabularTests.swift */; };
-		0028D0E0199EACEC00342453 /* lekcija8.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0028D0DF199EACEC00342453 /* lekcija8.txt */; };
-		0028D0E1199EACEC00342453 /* lekcija8.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0028D0DF199EACEC00342453 /* lekcija8.txt */; };
-		0049E43F19F6398C00775EA7 /* lekcija6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0049E43E19F6398C00775EA7 /* lekcija6.txt */; };
-		0049E44019F6398C00775EA7 /* lekcija6.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0049E43E19F6398C00775EA7 /* lekcija6.txt */; };
 		006DE58019D75C7A006D7A2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006DE57F19D75C7A006D7A2F /* UIKit.framework */; };
-		006DE58219D8AF5E006D7A2F /* lekcija11.txt in Resources */ = {isa = PBXBuildFile; fileRef = 006DE58119D8AF5E006D7A2F /* lekcija11.txt */; };
-		006DE58319D8AF5E006D7A2F /* lekcija11.txt in Resources */ = {isa = PBXBuildFile; fileRef = 006DE58119D8AF5E006D7A2F /* lekcija11.txt */; };
-		008AAA2E19B3AF3900FD98EA /* index.plist in Resources */ = {isa = PBXBuildFile; fileRef = 008AAA2D19B3AF3900FD98EA /* index.plist */; };
-		008AAA2F19B3AF3900FD98EA /* index.plist in Resources */ = {isa = PBXBuildFile; fileRef = 008AAA2D19B3AF3900FD98EA /* index.plist */; };
 		0090303119D71DFA00849265 /* LineGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090303019D71DFA00849265 /* LineGraphViewController.swift */; };
 		0090303219D71DFA00849265 /* LineGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090303019D71DFA00849265 /* LineGraphViewController.swift */; };
 		0094FF6E19BB4680004CEACE /* TestSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094FF6D19BB4680004CEACE /* TestSelectorViewController.swift */; };
 		0094FF6F19BB4680004CEACE /* TestSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094FF6D19BB4680004CEACE /* TestSelectorViewController.swift */; };
-		00A7391F19C47AD700475E11 /* lekcija10.txt in Resources */ = {isa = PBXBuildFile; fileRef = 00A7391D19C47AD700475E11 /* lekcija10.txt */; };
-		00A7392019C47AD700475E11 /* lekcija10.txt in Resources */ = {isa = PBXBuildFile; fileRef = 00A7391D19C47AD700475E11 /* lekcija10.txt */; };
 		00A7392119C47AD700475E11 /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A7391E19C47AD700475E11 /* TemplateIcon2x.png */; };
 		00A7392219C47AD700475E11 /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A7391E19C47AD700475E11 /* TemplateIcon2x.png */; };
-		00EEAFCF19F97CDD006E2ADA /* CoreVokabular.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00EEAFCE19F97CDD006E2ADA /* CoreVokabular.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +40,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				00EEAFCF19F97CDD006E2ADA /* CoreVokabular.framework in Embed Frameworks */,
+				0020EDF919FDA48000229CAC /* CoreVokabular.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,8 +48,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0013C85B19BC61120034C233 /* lekcija9.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lekcija9.txt; sourceTree = "<group>"; };
-		001BBD2E19E1E286006A955C /* lekcija12.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lekcija12.txt; sourceTree = "<group>"; };
+		0020EDF819FDA48000229CAC /* CoreVokabular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = CoreVokabular.framework; path = "/Users/borja/Library/Developer/Xcode/DerivedData/VokabularWorkspace-byzckeecsfwhaxcpjpybjbvamtzi/Build/Products/Debug-iphoneos/CoreVokabular.framework"; sourceTree = "<absolute>"; };
 		0028D0B4199EA87B00342453 /* Vokabular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vokabular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0028D0B8199EA87B00342453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0028D0B9199EA87B00342453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -73,16 +58,10 @@
 		0028D0C6199EA87B00342453 /* VokabularTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VokabularTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0028D0CB199EA87B00342453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0028D0CC199EA87B00342453 /* VokabularTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VokabularTests.swift; sourceTree = "<group>"; };
-		0028D0DF199EACEC00342453 /* lekcija8.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lekcija8.txt; sourceTree = "<group>"; };
-		0049E43E19F6398C00775EA7 /* lekcija6.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lekcija6.txt; sourceTree = "<group>"; };
 		006DE57F19D75C7A006D7A2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		006DE58119D8AF5E006D7A2F /* lekcija11.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lekcija11.txt; sourceTree = "<group>"; };
-		008AAA2D19B3AF3900FD98EA /* index.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = index.plist; sourceTree = "<group>"; };
 		0090303019D71DFA00849265 /* LineGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineGraphViewController.swift; sourceTree = "<group>"; };
 		0094FF6D19BB4680004CEACE /* TestSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSelectorViewController.swift; sourceTree = "<group>"; };
-		00A7391D19C47AD700475E11 /* lekcija10.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lekcija10.txt; sourceTree = "<group>"; };
 		00A7391E19C47AD700475E11 /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
-		00EEAFCE19F97CDD006E2ADA /* CoreVokabular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreVokabular.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +86,7 @@
 		0028D0AB199EA87B00342453 = {
 			isa = PBXGroup;
 			children = (
-				00EEAFCE19F97CDD006E2ADA /* CoreVokabular.framework */,
+				0020EDF819FDA48000229CAC /* CoreVokabular.framework */,
 				006DE57F19D75C7A006D7A2F /* UIKit.framework */,
 				0028D0B6199EA87B00342453 /* Vokabular */,
 				0028D0C9199EA87B00342453 /* VokabularTests */,
@@ -140,14 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				0028D0B8199EA87B00342453 /* Info.plist */,
-				0049E43E19F6398C00775EA7 /* lekcija6.txt */,
-				0028D0DF199EACEC00342453 /* lekcija8.txt */,
-				0013C85B19BC61120034C233 /* lekcija9.txt */,
-				00A7391D19C47AD700475E11 /* lekcija10.txt */,
-				006DE58119D8AF5E006D7A2F /* lekcija11.txt */,
-				001BBD2E19E1E286006A955C /* lekcija12.txt */,
 				00A7391E19C47AD700475E11 /* TemplateIcon2x.png */,
-				008AAA2D19B3AF3900FD98EA /* index.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -260,14 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				006DE58219D8AF5E006D7A2F /* lekcija11.txt in Resources */,
-				0013C85C19BC61120034C233 /* lekcija9.txt in Resources */,
-				001BBD2F19E1E286006A955C /* lekcija12.txt in Resources */,
 				0028D0BF199EA87B00342453 /* Main.storyboard in Resources */,
-				008AAA2E19B3AF3900FD98EA /* index.plist in Resources */,
-				00A7391F19C47AD700475E11 /* lekcija10.txt in Resources */,
-				0028D0E0199EACEC00342453 /* lekcija8.txt in Resources */,
-				0049E43F19F6398C00775EA7 /* lekcija6.txt in Resources */,
 				0028D0C1199EA87B00342453 /* Images.xcassets in Resources */,
 				00A7392119C47AD700475E11 /* TemplateIcon2x.png in Resources */,
 			);
@@ -278,13 +243,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				00A7392219C47AD700475E11 /* TemplateIcon2x.png in Resources */,
-				0028D0E1199EACEC00342453 /* lekcija8.txt in Resources */,
-				006DE58319D8AF5E006D7A2F /* lekcija11.txt in Resources */,
-				0049E44019F6398C00775EA7 /* lekcija6.txt in Resources */,
-				00A7392019C47AD700475E11 /* lekcija10.txt in Resources */,
-				0013C85D19BC61120034C233 /* lekcija9.txt in Resources */,
-				001BBD3019E1E286006A955C /* lekcija12.txt in Resources */,
-				008AAA2F19B3AF3900FD98EA /* index.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

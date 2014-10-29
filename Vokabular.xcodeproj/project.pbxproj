@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0013C85A19BC5E0E0034C233 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0BB199EA87B00342453 /* TestViewController.swift */; };
-		0020EDF919FDA48000229CAC /* CoreVokabular.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0020EDF819FDA48000229CAC /* CoreVokabular.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0028D0BA199EA87B00342453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0B9199EA87B00342453 /* AppDelegate.swift */; };
 		0028D0BC199EA87B00342453 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0BB199EA87B00342453 /* TestViewController.swift */; };
 		0028D0BF199EA87B00342453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0028D0BD199EA87B00342453 /* Main.storyboard */; };
@@ -21,6 +20,9 @@
 		0094FF6F19BB4680004CEACE /* TestSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094FF6D19BB4680004CEACE /* TestSelectorViewController.swift */; };
 		00A7392119C47AD700475E11 /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A7391E19C47AD700475E11 /* TemplateIcon2x.png */; };
 		00A7392219C47AD700475E11 /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A7391E19C47AD700475E11 /* TemplateIcon2x.png */; };
+		00B604541A01278100243649 /* CoreVokabular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B604521A01277400243649 /* CoreVokabular.framework */; };
+		00B604551A01278100243649 /* CoreVokabular.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00B604521A01277400243649 /* CoreVokabular.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		00B604561A0175ED00243649 /* CoreVokabular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B604521A01277400243649 /* CoreVokabular.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,13 +36,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		00EEAF8519F979E8006E2ADA /* Embed Frameworks */ = {
+		00FEEC3B19FFC18100192CE6 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0020EDF919FDA48000229CAC /* CoreVokabular.framework in Embed Frameworks */,
+				00B604551A01278100243649 /* CoreVokabular.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -48,7 +50,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0020EDF819FDA48000229CAC /* CoreVokabular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = CoreVokabular.framework; path = "/Users/borja/Library/Developer/Xcode/DerivedData/VokabularWorkspace-byzckeecsfwhaxcpjpybjbvamtzi/Build/Products/Debug-iphoneos/CoreVokabular.framework"; sourceTree = "<absolute>"; };
 		0028D0B4199EA87B00342453 /* Vokabular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vokabular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0028D0B8199EA87B00342453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0028D0B9199EA87B00342453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +63,7 @@
 		0090303019D71DFA00849265 /* LineGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineGraphViewController.swift; sourceTree = "<group>"; };
 		0094FF6D19BB4680004CEACE /* TestSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSelectorViewController.swift; sourceTree = "<group>"; };
 		00A7391E19C47AD700475E11 /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
+		00B604521A01277400243649 /* CoreVokabular.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreVokabular.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				006DE58019D75C7A006D7A2F /* UIKit.framework in Frameworks */,
+				00B604541A01278100243649 /* CoreVokabular.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B604561A0175ED00243649 /* CoreVokabular.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +90,7 @@
 		0028D0AB199EA87B00342453 = {
 			isa = PBXGroup;
 			children = (
-				0020EDF819FDA48000229CAC /* CoreVokabular.framework */,
+				00B604521A01277400243649 /* CoreVokabular.framework */,
 				006DE57F19D75C7A006D7A2F /* UIKit.framework */,
 				0028D0B6199EA87B00342453 /* Vokabular */,
 				0028D0C9199EA87B00342453 /* VokabularTests */,
@@ -161,7 +165,7 @@
 				0028D0B0199EA87B00342453 /* Sources */,
 				0028D0B1199EA87B00342453 /* Frameworks */,
 				0028D0B2199EA87B00342453 /* Resources */,
-				00EEAF8519F979E8006E2ADA /* Embed Frameworks */,
+				00FEEC3B19FFC18100192CE6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -380,10 +384,15 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vokabular",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Vokabular/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -396,10 +405,15 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vokabular",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Vokabular/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -414,6 +428,7 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BSGraphKit-dxrfhmrjnalzwxfxcqmmolkjkwan/Build/Products/Debug-iphoneos",
 					"$(PROJECT_DIR)/Vokabular/Dependencies",
 					"$(PROJECT_DIR)/Vokabular",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -421,6 +436,10 @@
 				);
 				INFOPLIST_FILE = VokabularTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vokabular.app/Vokabular";
 			};
@@ -436,9 +455,14 @@
 					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/BSGraphKit-dxrfhmrjnalzwxfxcqmmolkjkwan/Build/Products/Debug-iphoneos",
 					"$(PROJECT_DIR)/Vokabular/Dependencies",
 					"$(PROJECT_DIR)/Vokabular",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = VokabularTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vokabular.app/Vokabular";
 			};

@@ -1,0 +1,10 @@
+framework module CoreVokabular {
+  umbrella header "CoreVokabular.h"
+
+  export *
+  module * { export * }
+}
+
+module CoreVokabular.Swift {
+    header "CoreVokabular-Swift.h"
+}

@@ -9,40 +9,31 @@
 import UIKit
 import CoreVokabular
 
-class TestViewController: UIViewController
+class TestViewController: UIViewController, TestExecutionDelegate
 {
     @IBOutlet weak var wording : UILabel!
     @IBOutlet weak var originalWordLabel : UILabel!
     @IBOutlet weak var finalWordTextField : UITextField!
     @IBOutlet weak var correctSolutionLabel : UILabel!
-    
-    var wordGenerator : CoreVokabular.WordGenerator?
-    var currentWord : CoreVokabular.Word?
-    var previousWord : CoreVokabular.Word?
-    var numberOfHits : Int = 0
-    var total : Int = 0
-    var count : Int = 0
+
+    var testManager : TestExecutionManager?
     var selectedLesson : Dictionary<String, String>?
     
-    required init(coder aDecoder: (NSCoder!)) {
+    
+    
+    required init(coder aDecoder: (NSCoder!))
+    {
         super.init(coder: aDecoder)
     }
+    
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
-        var parser = CoreVokabular.WordParser()
-        var words = parser.parseWordsFromFileWithIndexKey(self.selectedLesson!["fileName"]!)
-        self.total = words.count
-        self.count = 1
-        self.wordGenerator = CoreVokabular.WordGenerator(words: words, numberOfWordsToGenerate: total)
-        self.currentWord = self.wordGenerator!.nextWord()!
         self.title = self.selectedLesson!["displayName"]
-
-        
-        self.navigationItem.rightBarButtonItem?.title = "\(self.count)/\(self.total)"
+        self.testManager = TestExecutionManager(delegate: self, selectedLesson:self.selectedLesson!)
     }
+    
     
     override func viewWillAppear(animated: Bool)
     {
@@ -55,79 +46,57 @@ class TestViewController: UIViewController
         self.finalWordTextField.becomeFirstResponder()
 
         // Show current word
-        self.originalWordLabel.text = self.currentWord?.name
-    }
-
-    override func didReceiveMemoryWarning()
-    {
-        super.didReceiveMemoryWarning()
-    
+        self.originalWordLabel.text = self.testManager!.initialWord()!.name
+        
+        self.navigationItem.rightBarButtonItem?.title = "\(self.testManager!.count)/\(self.testManager!.total)"
     }
 
     
     func textFieldShouldReturn(textField: UITextField!) -> Bool
     {
-    
-        var correctAnswer : String? = self.currentWord?.synonyms[0]
-        var givenAnswer : String = self.finalWordTextField.text
-        correctAnswer = correctAnswer?.lowercaseString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
-        givenAnswer = givenAnswer.lowercaseString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet())
-        
-        
-        
-        if givenAnswer == correctAnswer
-        {
-            if (self.previousWord != self.currentWord)
-            {
-                self.numberOfHits = self.numberOfHits + 1
-            }
-            self.previousWord = self.currentWord // Store the old one
-            self.currentWord = self.wordGenerator!.nextWord()?
-            self.originalWordLabel.text = self.currentWord?.name
-            self.finalWordTextField.text = ""
-            self.correctSolutionLabel.text = ""
-            self.finalWordTextField.textColor = UIColor(red: 0.0, green: 122/255.0, blue: 255.0/255.0, alpha: 1.0)
-            
-            if (self.currentWord == nil)
-            {
-                // We are done, show score
-                self.wording.text = "Score"
-                self.originalWordLabel.text = self.numberOfHits.description + " / " + self.total.description
-            }
-            
-            self.count += 1
-            self.navigationItem.rightBarButtonItem?.title = "\(self.count)/\(self.total)"
-        }
-        else
-        {
-            self.previousWord = self.currentWord // Store the old one
-            self.correctSolutionLabel.text = correctAnswer
-            
-            UIView.animateKeyframesWithDuration(0.15, delay: 0, options: .Autoreverse, animations: { () -> Void in
-                
-                UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 0.5, animations: { () -> Void in
-                    var frame = self.finalWordTextField.frame
-                    frame.origin.x -= 20
-                    self.finalWordTextField.frame = frame
-                });
-
-                UIView.addKeyframeWithRelativeStartTime(0.5, relativeDuration: 0.5, animations: { () -> Void in
-                    var frame = self.finalWordTextField.frame
-                    frame.origin.x += 20
-                    self.finalWordTextField.frame = frame
-                });
-
-                
-            }, completion: nil)
-            
-
-            self.finalWordTextField.textColor = UIColor.redColor()
-        }
-        
-        
-        
+        self.testManager!.processGivenAnswer(self.finalWordTextField.text)
         return true
     }
-
+    
+    // TestManagerDelegate
+    func handleCorrectAnswerWithNextWord(theNextWord : CoreVokabular.Word?)
+    {
+        self.originalWordLabel.text = self.testManager!.currentWord?.name
+        self.finalWordTextField.text = ""
+        self.correctSolutionLabel.text = ""
+        self.finalWordTextField.textColor = UIColor(red: 0.0, green: 122/255.0, blue: 255.0/255.0, alpha: 1.0)
+        
+        if (theNextWord == nil)
+        {
+            // We are done, show score
+            self.wording.text = "Score"
+            self.originalWordLabel.text = self.testManager!.numberOfCorrectAnswers.description + " / " + self.testManager!.total.description
+        }
+        
+        self.navigationItem.rightBarButtonItem?.title = "\(self.testManager!.count)/\(self.testManager!.total)"
+    }
+    
+    func handleFailedAttemptWithCorrectAnswer(correctAnswer : String)
+    {
+        self.correctSolutionLabel.text = correctAnswer
+        self.finalWordTextField.textColor = UIColor(red: 200.0/255.0, green: 12/255.0, blue: 80.0/255.0, alpha: 1.0)
+        
+        UIView.animateKeyframesWithDuration(0.15, delay: 0, options: .Autoreverse, animations: { () -> Void in
+            
+            UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 0.5, animations: { () -> Void in
+                var frame = self.finalWordTextField.frame
+                frame.origin.x -= 20
+                self.finalWordTextField.frame = frame
+            });
+            
+            UIView.addKeyframeWithRelativeStartTime(0.5, relativeDuration: 0.5, animations: { () -> Void in
+                var frame = self.finalWordTextField.frame
+                frame.origin.x += 20
+                self.finalWordTextField.frame = frame
+            });
+            
+            
+        }, completion: nil)
+    }
 }
 

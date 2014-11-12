@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000B59D61A0EB6B9007AC760 /* CoreVokabularOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000B59D51A0EB6B9007AC760 /* CoreVokabularOSX.framework */; };
+		000B59D71A0EB6BA007AC760 /* CoreVokabularOSX.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 000B59D51A0EB6B9007AC760 /* CoreVokabularOSX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0013C85A19BC5E0E0034C233 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0BB199EA87B00342453 /* TestViewController.swift */; };
 		0028D0BA199EA87B00342453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0B9199EA87B00342453 /* AppDelegate.swift */; };
 		0028D0BC199EA87B00342453 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0BB199EA87B00342453 /* TestViewController.swift */; };
@@ -14,6 +16,9 @@
 		0028D0C1199EA87B00342453 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0028D0C0199EA87B00342453 /* Images.xcassets */; };
 		0028D0CD199EA87B00342453 /* VokabularTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0CC199EA87B00342453 /* VokabularTests.swift */; };
 		006DE58019D75C7A006D7A2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006DE57F19D75C7A006D7A2F /* UIKit.framework */; };
+		007C6CDC1A10FC7C00A6C5C0 /* BSMainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C6CDB1A10FC7C00A6C5C0 /* BSMainWindowController.swift */; };
+		007C6CE11A1397F300A6C5C0 /* CoreVokabular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007C6CE01A1397F300A6C5C0 /* CoreVokabular.framework */; };
+		007C6CE21A1397F300A6C5C0 /* CoreVokabular.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 007C6CE01A1397F300A6C5C0 /* CoreVokabular.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0090303119D71DFA00849265 /* LineGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090303019D71DFA00849265 /* LineGraphViewController.swift */; };
 		0090303219D71DFA00849265 /* LineGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090303019D71DFA00849265 /* LineGraphViewController.swift */; };
 		0094FF6E19BB4680004CEACE /* TestSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094FF6D19BB4680004CEACE /* TestSelectorViewController.swift */; };
@@ -24,12 +29,6 @@
 		00B604621A018A6F00243649 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B604611A018A6F00243649 /* ViewController.swift */; };
 		00B604641A018A6F00243649 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B604631A018A6F00243649 /* Images.xcassets */; };
 		00B604671A018A6F00243649 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B604651A018A6F00243649 /* Main.storyboard */; };
-		00B604731A018A7000243649 /* Vokabular_OSXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B604721A018A7000243649 /* Vokabular_OSXTests.swift */; };
-		00ECE76A1A0214ED001F9D91 /* CoreVokabular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ECE7691A0214ED001F9D91 /* CoreVokabular.framework */; };
-		00ECE76B1A0214ED001F9D91 /* CoreVokabular.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00ECE7691A0214ED001F9D91 /* CoreVokabular.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		00ECE7D41A026F3F001F9D91 /* CoreVokabularOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ECE7D21A026F3F001F9D91 /* CoreVokabularOSX.framework */; };
-		00ECE7D51A026F4C001F9D91 /* CoreVokabularOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ECE7D21A026F3F001F9D91 /* CoreVokabularOSX.framework */; };
-		00ECE7D61A026F4C001F9D91 /* CoreVokabularOSX.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00ECE7D21A026F3F001F9D91 /* CoreVokabularOSX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,13 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		00B6047C1A018BF900243649 /* Embed Frameworks */ = {
+		00D055041A0D066B002D2268 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				00ECE7D61A026F4C001F9D91 /* CoreVokabularOSX.framework in Embed Frameworks */,
+				000B59D71A0EB6BA007AC760 /* CoreVokabularOSX.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,7 +66,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				00ECE76B1A0214ED001F9D91 /* CoreVokabular.framework in Embed Frameworks */,
+				007C6CE21A1397F300A6C5C0 /* CoreVokabular.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +74,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		000B59D51A0EB6B9007AC760 /* CoreVokabularOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreVokabularOSX.framework; sourceTree = "<group>"; };
 		0028D0B4199EA87B00342453 /* Vokabular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vokabular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0028D0B8199EA87B00342453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0028D0B9199EA87B00342453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,10 +85,12 @@
 		0028D0CB199EA87B00342453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0028D0CC199EA87B00342453 /* VokabularTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VokabularTests.swift; sourceTree = "<group>"; };
 		006DE57F19D75C7A006D7A2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		007C6CDB1A10FC7C00A6C5C0 /* BSMainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSMainWindowController.swift; sourceTree = "<group>"; };
+		007C6CE01A1397F300A6C5C0 /* CoreVokabular.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreVokabular.framework; sourceTree = "<group>"; };
 		0090303019D71DFA00849265 /* LineGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineGraphViewController.swift; sourceTree = "<group>"; };
 		0094FF6D19BB4680004CEACE /* TestSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSelectorViewController.swift; sourceTree = "<group>"; };
 		00A7391E19C47AD700475E11 /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
-		00B6045B1A018A6F00243649 /* Vokabular_OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vokabular_OSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00B6045B1A018A6F00243649 /* Vokabular_OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Vokabular_OSX.app; path = "Vokabular .app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00B6045E1A018A6F00243649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00B6045F1A018A6F00243649 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00B604611A018A6F00243649 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,8 +99,6 @@
 		00B6046C1A018A6F00243649 /* Vokabular_OSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Vokabular_OSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00B604711A018A7000243649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00B604721A018A7000243649 /* Vokabular_OSXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vokabular_OSXTests.swift; sourceTree = "<group>"; };
-		00ECE7691A0214ED001F9D91 /* CoreVokabular.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreVokabular.framework; sourceTree = "<group>"; };
-		00ECE7D21A026F3F001F9D91 /* CoreVokabularOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreVokabularOSX.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +107,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				006DE58019D75C7A006D7A2F /* UIKit.framework in Frameworks */,
-				00ECE76A1A0214ED001F9D91 /* CoreVokabular.framework in Frameworks */,
+				007C6CE11A1397F300A6C5C0 /* CoreVokabular.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00ECE7D51A026F4C001F9D91 /* CoreVokabularOSX.framework in Frameworks */,
+				000B59D61A0EB6B9007AC760 /* CoreVokabularOSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +130,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00ECE7D41A026F3F001F9D91 /* CoreVokabularOSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,8 +139,8 @@
 		0028D0AB199EA87B00342453 = {
 			isa = PBXGroup;
 			children = (
-				00ECE7D21A026F3F001F9D91 /* CoreVokabularOSX.framework */,
-				00ECE7691A0214ED001F9D91 /* CoreVokabular.framework */,
+				007C6CE01A1397F300A6C5C0 /* CoreVokabular.framework */,
+				000B59D51A0EB6B9007AC760 /* CoreVokabularOSX.framework */,
 				006DE57F19D75C7A006D7A2F /* UIKit.framework */,
 				0028D0B6199EA87B00342453 /* Vokabular */,
 				0028D0C9199EA87B00342453 /* VokabularTests */,
@@ -214,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				00B6045F1A018A6F00243649 /* AppDelegate.swift */,
+				007C6CDB1A10FC7C00A6C5C0 /* BSMainWindowController.swift */,
 				00B604611A018A6F00243649 /* ViewController.swift */,
 				00B604631A018A6F00243649 /* Images.xcassets */,
 				00B604651A018A6F00243649 /* Main.storyboard */,
@@ -286,20 +286,20 @@
 			productReference = 0028D0C6199EA87B00342453 /* VokabularTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		00B6045A1A018A6F00243649 /* Vokabular_OSX */ = {
+		00B6045A1A018A6F00243649 /* Vokabular  */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00B604741A018A7000243649 /* Build configuration list for PBXNativeTarget "Vokabular_OSX" */;
+			buildConfigurationList = 00B604741A018A7000243649 /* Build configuration list for PBXNativeTarget "Vokabular " */;
 			buildPhases = (
 				00B604571A018A6F00243649 /* Sources */,
 				00B604581A018A6F00243649 /* Frameworks */,
 				00B604591A018A6F00243649 /* Resources */,
-				00B6047C1A018BF900243649 /* Embed Frameworks */,
+				00D055041A0D066B002D2268 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Vokabular_OSX;
+			name = "Vokabular ";
 			productName = Vokabular_OSX;
 			productReference = 00B6045B1A018A6F00243649 /* Vokabular_OSX.app */;
 			productType = "com.apple.product-type.application";
@@ -362,7 +362,7 @@
 			targets = (
 				0028D0B3199EA87B00342453 /* Vokabular */,
 				0028D0C5199EA87B00342453 /* VokabularTests */,
-				00B6045A1A018A6F00243649 /* Vokabular_OSX */,
+				00B6045A1A018A6F00243649 /* Vokabular  */,
 				00B6046B1A018A6F00243649 /* Vokabular_OSXTests */,
 			);
 		};
@@ -433,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00B604621A018A6F00243649 /* ViewController.swift in Sources */,
+				007C6CDC1A10FC7C00A6C5C0 /* BSMainWindowController.swift in Sources */,
 				00B604601A018A6F00243649 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,7 +442,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00B604731A018A7000243649 /* Vokabular_OSXTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,7 +455,7 @@
 		};
 		00B6046E1A018A7000243649 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 00B6045A1A018A6F00243649 /* Vokabular_OSX */;
+			target = 00B6045A1A018A6F00243649 /* Vokabular  */;
 			targetProxy = 00B6046D1A018A7000243649 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -765,7 +765,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		00B604741A018A7000243649 /* Build configuration list for PBXNativeTarget "Vokabular_OSX" */ = {
+		00B604741A018A7000243649 /* Build configuration list for PBXNativeTarget "Vokabular " */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00B604751A018A7000243649 /* Debug */,

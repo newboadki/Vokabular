@@ -52,17 +52,7 @@ class TestSelectorViewController: UITableViewController
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath)
     {
         var lesson : NSDictionary = (self.index[indexPath.row] as NSDictionary)
-        
-//        var orderedKeys = sorted(keys, {(s1:String, s2:String) -> Bool in return s1<s2  } )
-
-        var numberStrings = ["8", "11", "5", "9", "6", "10", "1", "3", "12"]
-        var orderedNumberStrings = sorted(numberStrings, {(s1:String, s2:String) -> Bool in return s1<s2  } )
-
-
-        
-        
         cell.textLabel.text = (lesson["displayName"] as String)
-        
     }
     
     
@@ -85,11 +75,7 @@ class TestSelectorViewController: UITableViewController
         let selectedCell = sender as UITableViewCell
         let indexPath = self.tableView.indexPathForCell(selectedCell)
         let myVC = segue.destinationViewController as TestViewController
-
-        
-         myVC.selectedLesson = (self.index[indexPath!.row] as Dictionary<String, String>)
-        
-        
+        myVC.selectedLesson = (self.index[indexPath!.row] as Dictionary<String, String>)
     }
 
 

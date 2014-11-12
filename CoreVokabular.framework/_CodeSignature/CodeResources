@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/CoreVokabular.swiftmodule/arm.swiftmodule</key>
 		<data>
-		58bgwwCBMJenngW0yGMgeah14rM=
+		6GCrr9EL2Ukd3GXeOcu1Q0o2QZg=
 		</data>
 		<key>Modules/CoreVokabular.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/CoreVokabular.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		UxozK+nJzPaXjxaFpNphM/v2SKo=
+		SWczKs/iSVJ7g1OFFp7MXhQ6UbI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>index.plist</key>
 		<data>
-		MmfhFXU5c/M03ZS7OTBPmaMHrMQ=
+		2KM5h2guwv5awpg9WBuxVARXX90=
 		</data>
 		<key>lekcija10.txt</key>
 		<data>
@@ -50,19 +50,31 @@
 		</data>
 		<key>lekcija12.txt</key>
 		<data>
-		3eRZodK1EPJdU1EioWboCt9sIps=
+		NBbZqMKWKydhMlWQ7whrkKT+RXg=
+		</data>
+		<key>lekcija13.txt</key>
+		<data>
+		KiDe2x/xfq0V1Q6gZKfS2hwSxcQ=
+		</data>
+		<key>lekcija14.txt</key>
+		<data>
+		WG+/OqnlMg3BDDuH5zs7gg8YUsg=
 		</data>
 		<key>lekcija6.txt</key>
 		<data>
-		czTN2Lfom3iUdGXovHXr2WI/faE=
+		6ybSC+fwfKUwyAAWLy56DWzIyb8=
 		</data>
 		<key>lekcija8.txt</key>
 		<data>
-		+0NNKLn5Yf9BNlYLzYmtOhWxpMs=
+		+W2UpZRHlqCD9ePzHwOxAFIFjIA=
 		</data>
 		<key>lekcija9.txt</key>
 		<data>
-		nyOKcL2CAG6Of2sFVwYM46XH3Fs=
+		MQAHSql92/lhiDPSQlu7RiHLy1M=
+		</data>
+		<key>test.txt</key>
+		<data>
+		bh9YAEeAVSKNRfUqJbIKliaZC5g=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -81,7 +93,7 @@
 		</data>
 		<key>Modules/CoreVokabular.swiftmodule/arm.swiftmodule</key>
 		<data>
-		58bgwwCBMJenngW0yGMgeah14rM=
+		6GCrr9EL2Ukd3GXeOcu1Q0o2QZg=
 		</data>
 		<key>Modules/CoreVokabular.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -89,7 +101,7 @@
 		</data>
 		<key>Modules/CoreVokabular.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		UxozK+nJzPaXjxaFpNphM/v2SKo=
+		SWczKs/iSVJ7g1OFFp7MXhQ6UbI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -97,7 +109,7 @@
 		</data>
 		<key>index.plist</key>
 		<data>
-		MmfhFXU5c/M03ZS7OTBPmaMHrMQ=
+		2KM5h2guwv5awpg9WBuxVARXX90=
 		</data>
 		<key>lekcija10.txt</key>
 		<data>
@@ -109,19 +121,31 @@
 		</data>
 		<key>lekcija12.txt</key>
 		<data>
-		3eRZodK1EPJdU1EioWboCt9sIps=
+		NBbZqMKWKydhMlWQ7whrkKT+RXg=
+		</data>
+		<key>lekcija13.txt</key>
+		<data>
+		KiDe2x/xfq0V1Q6gZKfS2hwSxcQ=
+		</data>
+		<key>lekcija14.txt</key>
+		<data>
+		WG+/OqnlMg3BDDuH5zs7gg8YUsg=
 		</data>
 		<key>lekcija6.txt</key>
 		<data>
-		czTN2Lfom3iUdGXovHXr2WI/faE=
+		6ybSC+fwfKUwyAAWLy56DWzIyb8=
 		</data>
 		<key>lekcija8.txt</key>
 		<data>
-		+0NNKLn5Yf9BNlYLzYmtOhWxpMs=
+		+W2UpZRHlqCD9ePzHwOxAFIFjIA=
 		</data>
 		<key>lekcija9.txt</key>
 		<data>
-		nyOKcL2CAG6Of2sFVwYM46XH3Fs=
+		MQAHSql92/lhiDPSQlu7RiHLy1M=
+		</data>
+		<key>test.txt</key>
+		<data>
+		bh9YAEeAVSKNRfUqJbIKliaZC5g=
 		</data>
 	</dict>
 	<key>rules</key>

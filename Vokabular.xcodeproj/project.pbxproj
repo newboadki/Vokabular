@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		000B59D61A0EB6B9007AC760 /* CoreVokabularOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 000B59D51A0EB6B9007AC760 /* CoreVokabularOSX.framework */; };
-		000B59D71A0EB6BA007AC760 /* CoreVokabularOSX.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 000B59D51A0EB6B9007AC760 /* CoreVokabularOSX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0013C85A19BC5E0E0034C233 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0BB199EA87B00342453 /* TestViewController.swift */; };
 		0028D0BA199EA87B00342453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0B9199EA87B00342453 /* AppDelegate.swift */; };
 		0028D0BC199EA87B00342453 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0BB199EA87B00342453 /* TestViewController.swift */; };
@@ -17,8 +15,10 @@
 		0028D0CD199EA87B00342453 /* VokabularTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0CC199EA87B00342453 /* VokabularTests.swift */; };
 		006DE58019D75C7A006D7A2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006DE57F19D75C7A006D7A2F /* UIKit.framework */; };
 		007C6CDC1A10FC7C00A6C5C0 /* BSMainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C6CDB1A10FC7C00A6C5C0 /* BSMainWindowController.swift */; };
-		007C6CE11A1397F300A6C5C0 /* CoreVokabular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007C6CE01A1397F300A6C5C0 /* CoreVokabular.framework */; };
-		007C6CE21A1397F300A6C5C0 /* CoreVokabular.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 007C6CE01A1397F300A6C5C0 /* CoreVokabular.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		007C6CEF1A163A7200A6C5C0 /* CoreVokabular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007C6CEE1A163A7200A6C5C0 /* CoreVokabular.framework */; };
+		007C6CF01A163A7200A6C5C0 /* CoreVokabular.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 007C6CEE1A163A7200A6C5C0 /* CoreVokabular.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		007C6CF21A17723600A6C5C0 /* CoreVokabularOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007C6CF11A17723600A6C5C0 /* CoreVokabularOSX.framework */; };
+		007C6CF31A17723600A6C5C0 /* CoreVokabularOSX.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 007C6CF11A17723600A6C5C0 /* CoreVokabularOSX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0090303119D71DFA00849265 /* LineGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090303019D71DFA00849265 /* LineGraphViewController.swift */; };
 		0090303219D71DFA00849265 /* LineGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090303019D71DFA00849265 /* LineGraphViewController.swift */; };
 		0094FF6E19BB4680004CEACE /* TestSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094FF6D19BB4680004CEACE /* TestSelectorViewController.swift */; };
@@ -55,7 +55,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				000B59D71A0EB6BA007AC760 /* CoreVokabularOSX.framework in Embed Frameworks */,
+				007C6CF31A17723600A6C5C0 /* CoreVokabularOSX.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,7 +66,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				007C6CE21A1397F300A6C5C0 /* CoreVokabular.framework in Embed Frameworks */,
+				007C6CF01A163A7200A6C5C0 /* CoreVokabular.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,7 +74,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		000B59D51A0EB6B9007AC760 /* CoreVokabularOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreVokabularOSX.framework; sourceTree = "<group>"; };
 		0028D0B4199EA87B00342453 /* Vokabular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vokabular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0028D0B8199EA87B00342453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0028D0B9199EA87B00342453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,11 +85,12 @@
 		0028D0CC199EA87B00342453 /* VokabularTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VokabularTests.swift; sourceTree = "<group>"; };
 		006DE57F19D75C7A006D7A2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		007C6CDB1A10FC7C00A6C5C0 /* BSMainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSMainWindowController.swift; sourceTree = "<group>"; };
-		007C6CE01A1397F300A6C5C0 /* CoreVokabular.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreVokabular.framework; sourceTree = "<group>"; };
+		007C6CEE1A163A7200A6C5C0 /* CoreVokabular.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreVokabular.framework; sourceTree = "<group>"; };
+		007C6CF11A17723600A6C5C0 /* CoreVokabularOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreVokabularOSX.framework; sourceTree = "<group>"; };
 		0090303019D71DFA00849265 /* LineGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineGraphViewController.swift; sourceTree = "<group>"; };
 		0094FF6D19BB4680004CEACE /* TestSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSelectorViewController.swift; sourceTree = "<group>"; };
 		00A7391E19C47AD700475E11 /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
-		00B6045B1A018A6F00243649 /* Vokabular_OSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Vokabular_OSX.app; path = "Vokabular .app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00B6045B1A018A6F00243649 /* Vokabular .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vokabular .app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00B6045E1A018A6F00243649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00B6045F1A018A6F00243649 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00B604611A018A6F00243649 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				006DE58019D75C7A006D7A2F /* UIKit.framework in Frameworks */,
-				007C6CE11A1397F300A6C5C0 /* CoreVokabular.framework in Frameworks */,
+				007C6CEF1A163A7200A6C5C0 /* CoreVokabular.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				000B59D61A0EB6B9007AC760 /* CoreVokabularOSX.framework in Frameworks */,
+				007C6CF21A17723600A6C5C0 /* CoreVokabularOSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +139,8 @@
 		0028D0AB199EA87B00342453 = {
 			isa = PBXGroup;
 			children = (
-				007C6CE01A1397F300A6C5C0 /* CoreVokabular.framework */,
-				000B59D51A0EB6B9007AC760 /* CoreVokabularOSX.framework */,
+				007C6CF11A17723600A6C5C0 /* CoreVokabularOSX.framework */,
+				007C6CEE1A163A7200A6C5C0 /* CoreVokabular.framework */,
 				006DE57F19D75C7A006D7A2F /* UIKit.framework */,
 				0028D0B6199EA87B00342453 /* Vokabular */,
 				0028D0C9199EA87B00342453 /* VokabularTests */,
@@ -155,7 +155,7 @@
 			children = (
 				0028D0B4199EA87B00342453 /* Vokabular.app */,
 				0028D0C6199EA87B00342453 /* VokabularTests.xctest */,
-				00B6045B1A018A6F00243649 /* Vokabular_OSX.app */,
+				00B6045B1A018A6F00243649 /* Vokabular .app */,
 				00B6046C1A018A6F00243649 /* Vokabular_OSXTests.xctest */,
 			);
 			name = Products;
@@ -301,7 +301,7 @@
 			);
 			name = "Vokabular ";
 			productName = Vokabular_OSX;
-			productReference = 00B6045B1A018A6F00243649 /* Vokabular_OSX.app */;
+			productReference = 00B6045B1A018A6F00243649 /* Vokabular .app */;
 			productType = "com.apple.product-type.application";
 		};
 		00B6046B1A018A6F00243649 /* Vokabular_OSXTests */ = {

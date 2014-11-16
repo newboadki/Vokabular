@@ -13,7 +13,7 @@ import CoreVokabularOSX
 class ViewController: NSViewController, TestExecutionDelegate
 {
     
-    @IBOutlet weak var NextButton: NSButton!
+    @IBOutlet weak var nextButton: NSButton!
     @IBOutlet weak var wording : NSTextField!
     @IBOutlet weak var originalWordLabel : NSTextField!
     @IBOutlet weak var finalWordTextField : NSTextField!
@@ -25,19 +25,18 @@ class ViewController: NSViewController, TestExecutionDelegate
     var index : NSArray?
     
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         self.index = WordParser.lessonsIndexArray()
-        self.selectedLesson = (self.index![0] as Dictionary<String, String>)
+        self.selectedLesson = (self.index![6] as Dictionary<String, String>)
         self.title = self.selectedLesson!["displayName"]
         self.testManager = TestExecutionManager(delegate: self, selectedLesson:self.selectedLesson!)
+        var originalWordTextFieldCell : NSTextFieldCell = self.originalWordLabel.cell() as NSTextFieldCell
+        var initialWord : CoreVokabularOSX.Word = self.testManager!.initialWord()!
+        originalWordTextFieldCell.title = initialWord.name!
+        
+        NSNotificationCenter.defaultCenter().postNotificationName("kUserSubmittedCorrectAnswerNotification", object: nil, userInfo: ["kCount":self.testManager!.count, "kTotal":self.testManager!.total])
     }
-    
-    override var representedObject: AnyObject? {
-        didSet {
-            // Update the view, if already loaded.
-        }
-    }
-    
     
     @IBAction func nextButtonPressed(sender: NSButton) {
         var finalWordTextFieldCell : NSTextFieldCell = self.finalWordTextField.cell() as NSTextFieldCell
@@ -47,7 +46,8 @@ class ViewController: NSViewController, TestExecutionDelegate
     // TestManagerDelegate -------------------------------------------------------------------------------------------------
     func handleCorrectAnswerWithNextWord(theNextWord : CoreVokabularOSX.Word?)
     {
-        NSNotificationCenter.defaultCenter().postNotificationName("kUserSubmittedCorrectAnswerNotification", object: nil, userInfo: nil)
+        println("Score: (\(self.testManager!.count) / \(self.testManager!.total)). Correct: \(self.testManager!.numberOfCorrectAnswers). \(self.testManager!.numberOfCorrectAnswers/self.testManager!.total)%")
+        NSNotificationCenter.defaultCenter().postNotificationName("kUserSubmittedCorrectAnswerNotification", object: nil, userInfo: ["kCount":self.testManager!.count, "kTotal":self.testManager!.total])
         
         var finalWordTextFieldCell : NSTextFieldCell = self.finalWordTextField.cell() as NSTextFieldCell
         var originalWordTextFieldCell : NSTextFieldCell = self.originalWordLabel.cell() as NSTextFieldCell
@@ -59,6 +59,11 @@ class ViewController: NSViewController, TestExecutionDelegate
         {
             // We are done, show score
             wordingTextFieldCell.title = "Score"
+            originalWordTextFieldCell.title = "\(self.testManager!.numberOfCorrectAnswers) / \(self.testManager!.total)"
+            self.finalWordTextField.hidden = true
+            self.correctSolutionLabel.hidden = true
+            self.nextButton.hidden = true
+            
         }
         else
         {

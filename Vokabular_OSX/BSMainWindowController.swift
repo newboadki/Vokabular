@@ -16,12 +16,16 @@ class BSMainWindowController: NSWindowController {
     required init?(coder aDecoder: NSCoder)
     {
         super.init(coder:aDecoder)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("handleCorrectAnswer"), name: "kUserSubmittedCorrectAnswerNotification", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("handleCorrectAnswer:"), name: "kUserSubmittedCorrectAnswerNotification", object: nil)
     }
 
     
-    func handleCorrectAnswer() {
+    func handleCorrectAnswer(notification :NSNotification) {
+        
+        let userInfo = notification.userInfo
         var progressTextFieldCell : NSTextFieldCell = self.progressTextField.cell() as NSTextFieldCell
-        progressTextFieldCell.title = "Hey"
+        let count: AnyObject? = userInfo!["kCount"]
+        let total: AnyObject? = userInfo!["kTotal"]
+        progressTextFieldCell.title = "\(count!) / \(total!)"
     }
 }

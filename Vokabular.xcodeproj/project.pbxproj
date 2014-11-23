@@ -14,11 +14,11 @@
 		0028D0C1199EA87B00342453 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0028D0C0199EA87B00342453 /* Images.xcassets */; };
 		0028D0CD199EA87B00342453 /* VokabularTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0CC199EA87B00342453 /* VokabularTests.swift */; };
 		006DE58019D75C7A006D7A2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006DE57F19D75C7A006D7A2F /* UIKit.framework */; };
+		007364FA1A2234C000AAEF31 /* CoreVokabular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007364F81A2233BA00AAEF31 /* CoreVokabular.framework */; };
+		007364FB1A2234C000AAEF31 /* CoreVokabular.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 007364F81A2233BA00AAEF31 /* CoreVokabular.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		007364FD1A22365400AAEF31 /* CoreVokabularOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007364FC1A22365400AAEF31 /* CoreVokabularOSX.framework */; };
+		007364FE1A22365400AAEF31 /* CoreVokabularOSX.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 007364FC1A22365400AAEF31 /* CoreVokabularOSX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		007C6CDC1A10FC7C00A6C5C0 /* BSMainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C6CDB1A10FC7C00A6C5C0 /* BSMainWindowController.swift */; };
-		007C6CEF1A163A7200A6C5C0 /* CoreVokabular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007C6CEE1A163A7200A6C5C0 /* CoreVokabular.framework */; };
-		007C6CF01A163A7200A6C5C0 /* CoreVokabular.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 007C6CEE1A163A7200A6C5C0 /* CoreVokabular.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		007C6CF21A17723600A6C5C0 /* CoreVokabularOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007C6CF11A17723600A6C5C0 /* CoreVokabularOSX.framework */; };
-		007C6CF31A17723600A6C5C0 /* CoreVokabularOSX.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 007C6CF11A17723600A6C5C0 /* CoreVokabularOSX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0090303119D71DFA00849265 /* LineGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090303019D71DFA00849265 /* LineGraphViewController.swift */; };
 		0090303219D71DFA00849265 /* LineGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090303019D71DFA00849265 /* LineGraphViewController.swift */; };
 		0094FF6E19BB4680004CEACE /* TestSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094FF6D19BB4680004CEACE /* TestSelectorViewController.swift */; };
@@ -49,13 +49,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		00D055041A0D066B002D2268 /* Embed Frameworks */ = {
+		007364FF1A22365400AAEF31 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				007C6CF31A17723600A6C5C0 /* CoreVokabularOSX.framework in Embed Frameworks */,
+				007364FE1A22365400AAEF31 /* CoreVokabularOSX.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,7 +66,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				007C6CF01A163A7200A6C5C0 /* CoreVokabular.framework in Embed Frameworks */,
+				007364FB1A2234C000AAEF31 /* CoreVokabular.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,9 +84,9 @@
 		0028D0CB199EA87B00342453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0028D0CC199EA87B00342453 /* VokabularTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VokabularTests.swift; sourceTree = "<group>"; };
 		006DE57F19D75C7A006D7A2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		007364F81A2233BA00AAEF31 /* CoreVokabular.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreVokabular.framework; sourceTree = "<group>"; };
+		007364FC1A22365400AAEF31 /* CoreVokabularOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreVokabularOSX.framework; sourceTree = "<group>"; };
 		007C6CDB1A10FC7C00A6C5C0 /* BSMainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSMainWindowController.swift; sourceTree = "<group>"; };
-		007C6CEE1A163A7200A6C5C0 /* CoreVokabular.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreVokabular.framework; sourceTree = "<group>"; };
-		007C6CF11A17723600A6C5C0 /* CoreVokabularOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreVokabularOSX.framework; sourceTree = "<group>"; };
 		0090303019D71DFA00849265 /* LineGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineGraphViewController.swift; sourceTree = "<group>"; };
 		0094FF6D19BB4680004CEACE /* TestSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSelectorViewController.swift; sourceTree = "<group>"; };
 		00A7391E19C47AD700475E11 /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				006DE58019D75C7A006D7A2F /* UIKit.framework in Frameworks */,
-				007C6CEF1A163A7200A6C5C0 /* CoreVokabular.framework in Frameworks */,
+				007364FA1A2234C000AAEF31 /* CoreVokabular.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				007C6CF21A17723600A6C5C0 /* CoreVokabularOSX.framework in Frameworks */,
+				007364FD1A22365400AAEF31 /* CoreVokabularOSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +139,8 @@
 		0028D0AB199EA87B00342453 = {
 			isa = PBXGroup;
 			children = (
-				007C6CF11A17723600A6C5C0 /* CoreVokabularOSX.framework */,
-				007C6CEE1A163A7200A6C5C0 /* CoreVokabular.framework */,
+				007364FC1A22365400AAEF31 /* CoreVokabularOSX.framework */,
+				007364F81A2233BA00AAEF31 /* CoreVokabular.framework */,
 				006DE57F19D75C7A006D7A2F /* UIKit.framework */,
 				0028D0B6199EA87B00342453 /* Vokabular */,
 				0028D0C9199EA87B00342453 /* VokabularTests */,
@@ -293,7 +293,7 @@
 				00B604571A018A6F00243649 /* Sources */,
 				00B604581A018A6F00243649 /* Frameworks */,
 				00B604591A018A6F00243649 /* Resources */,
-				00D055041A0D066B002D2268 /* Embed Frameworks */,
+				007364FF1A22365400AAEF31 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

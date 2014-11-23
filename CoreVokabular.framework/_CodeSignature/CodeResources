@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/CoreVokabular.swiftmodule/arm.swiftmodule</key>
 		<data>
-		6GCrr9EL2Ukd3GXeOcu1Q0o2QZg=
+		kFDdyfpp4zt1no3y/hxOa6EaxHA=
 		</data>
 		<key>Modules/CoreVokabular.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/CoreVokabular.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		SWczKs/iSVJ7g1OFFp7MXhQ6UbI=
+		5GzQ5+a3qFx6PnLEl2bqVtGiBK8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>index.plist</key>
 		<data>
-		r1sbuyPMZ7V2awewSG0mE1Sjd6A=
+		1R6TxG4imnJxehtBNC6Mc4L4FGQ=
 		</data>
 		<key>lekcija10.txt</key>
 		<data>
@@ -64,6 +64,10 @@
 		<data>
 		9gbxQdJSoA+tB0w3BujR/TJkW6A=
 		</data>
+		<key>lekcija16.txt</key>
+		<data>
+		vbrL/jNsOcBlg10dA+GDrhoptsU=
+		</data>
 		<key>lekcija6.txt</key>
 		<data>
 		6ybSC+fwfKUwyAAWLy56DWzIyb8=
@@ -75,10 +79,6 @@
 		<key>lekcija9.txt</key>
 		<data>
 		MQAHSql92/lhiDPSQlu7RiHLy1M=
-		</data>
-		<key>test.txt</key>
-		<data>
-		bh9YAEeAVSKNRfUqJbIKliaZC5g=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -97,7 +97,7 @@
 		</data>
 		<key>Modules/CoreVokabular.swiftmodule/arm.swiftmodule</key>
 		<data>
-		6GCrr9EL2Ukd3GXeOcu1Q0o2QZg=
+		kFDdyfpp4zt1no3y/hxOa6EaxHA=
 		</data>
 		<key>Modules/CoreVokabular.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -105,7 +105,7 @@
 		</data>
 		<key>Modules/CoreVokabular.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		SWczKs/iSVJ7g1OFFp7MXhQ6UbI=
+		5GzQ5+a3qFx6PnLEl2bqVtGiBK8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -113,7 +113,7 @@
 		</data>
 		<key>index.plist</key>
 		<data>
-		r1sbuyPMZ7V2awewSG0mE1Sjd6A=
+		1R6TxG4imnJxehtBNC6Mc4L4FGQ=
 		</data>
 		<key>lekcija10.txt</key>
 		<data>
@@ -139,6 +139,10 @@
 		<data>
 		9gbxQdJSoA+tB0w3BujR/TJkW6A=
 		</data>
+		<key>lekcija16.txt</key>
+		<data>
+		vbrL/jNsOcBlg10dA+GDrhoptsU=
+		</data>
 		<key>lekcija6.txt</key>
 		<data>
 		6ybSC+fwfKUwyAAWLy56DWzIyb8=
@@ -150,10 +154,6 @@
 		<key>lekcija9.txt</key>
 		<data>
 		MQAHSql92/lhiDPSQlu7RiHLy1M=
-		</data>
-		<key>test.txt</key>
-		<data>
-		bh9YAEeAVSKNRfUqJbIKliaZC5g=
 		</data>
 	</dict>
 	<key>rules</key>

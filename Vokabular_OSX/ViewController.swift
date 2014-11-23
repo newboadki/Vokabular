@@ -28,7 +28,7 @@ class ViewController: NSViewController, TestExecutionDelegate
     override func viewDidLoad()
     {
         self.index = WordParser.lessonsIndexArray()
-        self.selectedLesson = (self.index![6] as Dictionary<String, String>)
+        self.selectedLesson = (self.index![9] as Dictionary<String, String>)
         self.title = self.selectedLesson!["displayName"]
         self.testManager = TestExecutionManager(delegate: self, selectedLesson:self.selectedLesson!)
         var originalWordTextFieldCell : NSTextFieldCell = self.originalWordLabel.cell() as NSTextFieldCell

@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/CoreVokabular-Swift.h</key>
 		<data>
-		I4DO0sMw7645TbWya4j8xApsabY=
+		3mMWoR+9/tvCADTTjHJ+2pviNe0=
 		</data>
 		<key>Headers/CoreVokabular.h</key>
 		<data>
@@ -14,23 +14,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		0mq5T6gWInkhzsYS89oCmssIoqo=
+		vqHuRgxKhlHfsVK1GrarlszHS8E=
 		</data>
 		<key>Modules/CoreVokabular.swiftmodule/arm.swiftdoc</key>
 		<data>
-		vmyM9tHHf6lEMhuQwzqef7BF0ns=
+		QNuHOfz3W2RCwaVglDLe1/1Gc+I=
 		</data>
 		<key>Modules/CoreVokabular.swiftmodule/arm.swiftmodule</key>
 		<data>
-		kFDdyfpp4zt1no3y/hxOa6EaxHA=
+		NwLguibrKdDHGYl150f7/PHdtjk=
 		</data>
 		<key>Modules/CoreVokabular.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		vmyM9tHHf6lEMhuQwzqef7BF0ns=
+		gq4hFy5fT/NMJGr6E2rBkMCbOuU=
 		</data>
 		<key>Modules/CoreVokabular.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		5GzQ5+a3qFx6PnLEl2bqVtGiBK8=
+		9UAK8bSZCG+QjRfyj6jeaZY3MSs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>index.plist</key>
 		<data>
-		1R6TxG4imnJxehtBNC6Mc4L4FGQ=
+		yLAqY5UIL2QTB1lsH/XajK6i9Qg=
 		</data>
 		<key>lekcija10.txt</key>
 		<data>
@@ -68,6 +68,10 @@
 		<data>
 		vbrL/jNsOcBlg10dA+GDrhoptsU=
 		</data>
+		<key>lekcija17.txt</key>
+		<data>
+		TLy63HO9CBlkRtTUQPA67Ok8Z28=
+		</data>
 		<key>lekcija6.txt</key>
 		<data>
 		6ybSC+fwfKUwyAAWLy56DWzIyb8=
@@ -80,12 +84,16 @@
 		<data>
 		MQAHSql92/lhiDPSQlu7RiHLy1M=
 		</data>
+		<key>miscellanea2.txt</key>
+		<data>
+		fEBmgBBHjFEWRAmY4nzmnUsb6qU=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
 		<key>Headers/CoreVokabular-Swift.h</key>
 		<data>
-		I4DO0sMw7645TbWya4j8xApsabY=
+		3mMWoR+9/tvCADTTjHJ+2pviNe0=
 		</data>
 		<key>Headers/CoreVokabular.h</key>
 		<data>
@@ -93,19 +101,19 @@
 		</data>
 		<key>Modules/CoreVokabular.swiftmodule/arm.swiftdoc</key>
 		<data>
-		vmyM9tHHf6lEMhuQwzqef7BF0ns=
+		QNuHOfz3W2RCwaVglDLe1/1Gc+I=
 		</data>
 		<key>Modules/CoreVokabular.swiftmodule/arm.swiftmodule</key>
 		<data>
-		kFDdyfpp4zt1no3y/hxOa6EaxHA=
+		NwLguibrKdDHGYl150f7/PHdtjk=
 		</data>
 		<key>Modules/CoreVokabular.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		vmyM9tHHf6lEMhuQwzqef7BF0ns=
+		gq4hFy5fT/NMJGr6E2rBkMCbOuU=
 		</data>
 		<key>Modules/CoreVokabular.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		5GzQ5+a3qFx6PnLEl2bqVtGiBK8=
+		9UAK8bSZCG+QjRfyj6jeaZY3MSs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -113,7 +121,7 @@
 		</data>
 		<key>index.plist</key>
 		<data>
-		1R6TxG4imnJxehtBNC6Mc4L4FGQ=
+		yLAqY5UIL2QTB1lsH/XajK6i9Qg=
 		</data>
 		<key>lekcija10.txt</key>
 		<data>
@@ -143,6 +151,10 @@
 		<data>
 		vbrL/jNsOcBlg10dA+GDrhoptsU=
 		</data>
+		<key>lekcija17.txt</key>
+		<data>
+		TLy63HO9CBlkRtTUQPA67Ok8Z28=
+		</data>
 		<key>lekcija6.txt</key>
 		<data>
 		6ybSC+fwfKUwyAAWLy56DWzIyb8=
@@ -154,6 +166,10 @@
 		<key>lekcija9.txt</key>
 		<data>
 		MQAHSql92/lhiDPSQlu7RiHLy1M=
+		</data>
+		<key>miscellanea2.txt</key>
+		<data>
+		fEBmgBBHjFEWRAmY4nzmnUsb6qU=
 		</data>
 	</dict>
 	<key>rules</key>

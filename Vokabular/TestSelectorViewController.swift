@@ -51,13 +51,13 @@ class TestSelectorViewController: UITableViewController
     
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath)
     {
-        var lesson : NSDictionary = (self.index[indexPath.row] as NSDictionary)
-        cell.textLabel.text = (lesson["displayName"] as String)
+        var lesson : NSDictionary = (self.index[indexPath.row] as! NSDictionary)
+        cell.textLabel?.text = (lesson["displayName"] as! String)
     }
     
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
 
         // Configure the cell...
 
@@ -72,10 +72,10 @@ class TestSelectorViewController: UITableViewController
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         
-        let selectedCell = sender as UITableViewCell
+        let selectedCell = sender as! UITableViewCell
         let indexPath = self.tableView.indexPathForCell(selectedCell)
-        let myVC = segue.destinationViewController as TestViewController
-        myVC.selectedLesson = (self.index[indexPath!.row] as Dictionary<String, String>)
+        let myVC = segue.destinationViewController as! TestViewController
+        myVC.selectedLesson = (self.index[indexPath!.row] as! Dictionary<String, String>)
     }
 
 

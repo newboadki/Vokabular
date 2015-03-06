@@ -46,7 +46,7 @@ class TestViewController: UIViewController, TestExecutionDelegate
         self.finalWordTextField.becomeFirstResponder()
 
         // Show current word
-        self.originalWordLabel.text = self.testManager!.initialWord()!.name
+        self.originalWordLabel.text = self.testManager!.initialWord()!.name as! String
         
         self.navigationItem.rightBarButtonItem?.title = "\(self.testManager!.count)/\(self.testManager!.total)"
     }
@@ -61,7 +61,7 @@ class TestViewController: UIViewController, TestExecutionDelegate
     // TestManagerDelegate
     func handleCorrectAnswerWithNextWord(theNextWord : CoreVokabular.Word?)
     {
-        self.originalWordLabel.text = self.testManager!.currentWord?.name
+        self.originalWordLabel.text = self.testManager!.currentWord?.name as! String
         self.finalWordTextField.text = ""
         self.correctSolutionLabel.text = ""
         self.finalWordTextField.textColor = UIColor(red: 0.0, green: 122/255.0, blue: 255.0/255.0, alpha: 1.0)

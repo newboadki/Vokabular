@@ -7,22 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000A11411C4079E60089DC60 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A11401C4079E60089DC60 /* PageViewController.swift */; };
+		000A11421C4079E60089DC60 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A11401C4079E60089DC60 /* PageViewController.swift */; };
+		000A11471C41A1B90089DC60 /* LessonCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A11461C41A1B90089DC60 /* LessonCellTableViewCell.swift */; };
+		000A11481C41A1B90089DC60 /* LessonCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A11461C41A1B90089DC60 /* LessonCellTableViewCell.swift */; };
+		000A114A1C41B4D60089DC60 /* WordDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A11491C41B4D60089DC60 /* WordDetailsViewController.swift */; };
+		000A114B1C41B4D60089DC60 /* WordDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000A11491C41B4D60089DC60 /* WordDetailsViewController.swift */; };
 		0013C85A19BC5E0E0034C233 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0BB199EA87B00342453 /* TestViewController.swift */; };
 		0028D0BA199EA87B00342453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0B9199EA87B00342453 /* AppDelegate.swift */; };
 		0028D0BC199EA87B00342453 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0BB199EA87B00342453 /* TestViewController.swift */; };
 		0028D0BF199EA87B00342453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0028D0BD199EA87B00342453 /* Main.storyboard */; };
 		0028D0C1199EA87B00342453 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0028D0C0199EA87B00342453 /* Images.xcassets */; };
 		0028D0CD199EA87B00342453 /* VokabularTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0028D0CC199EA87B00342453 /* VokabularTests.swift */; };
+		00297D7A1AAC4BE20085D3DE /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00297D791AAC4BE20085D3DE /* ActionRequestHandler.swift */; };
+		00297D7C1AAC4BE20085D3DE /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = 00297D7B1AAC4BE20085D3DE /* Action.js */; };
+		00297D7F1AAC4BE20085D3DE /* Export to Vokabular.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 00297D751AAC4BE20085D3DE /* Export to Vokabular.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		004B18B41ABDFE5200F70961 /* BSLessonSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004B18B31ABDFE5200F70961 /* BSLessonSelectorViewController.swift */; };
+		004B18B61ABFF06A00F70961 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0028D0C0199EA87B00342453 /* Images.xcassets */; };
 		006DE58019D75C7A006D7A2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006DE57F19D75C7A006D7A2F /* UIKit.framework */; };
-		007364FD1A22365400AAEF31 /* CoreVokabularOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007364FC1A22365400AAEF31 /* CoreVokabularOSX.framework */; };
-		007364FE1A22365400AAEF31 /* CoreVokabularOSX.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 007364FC1A22365400AAEF31 /* CoreVokabularOSX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		007856761C4BA08E009FAE7B /* CoreVokabular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007856751C4BA08E009FAE7B /* CoreVokabular.framework */; };
+		007856771C4BA08E009FAE7B /* CoreVokabular.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 007856751C4BA08E009FAE7B /* CoreVokabular.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		007C6CDC1A10FC7C00A6C5C0 /* BSMainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C6CDB1A10FC7C00A6C5C0 /* BSMainWindowController.swift */; };
 		0090303119D71DFA00849265 /* LineGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090303019D71DFA00849265 /* LineGraphViewController.swift */; };
 		0090303219D71DFA00849265 /* LineGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090303019D71DFA00849265 /* LineGraphViewController.swift */; };
 		0094FF6E19BB4680004CEACE /* TestSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094FF6D19BB4680004CEACE /* TestSelectorViewController.swift */; };
 		0094FF6F19BB4680004CEACE /* TestSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094FF6D19BB4680004CEACE /* TestSelectorViewController.swift */; };
-		00A1EFEC1AA3919900F68AE6 /* CoreVokabular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00A1EFEB1AA3919900F68AE6 /* CoreVokabular.framework */; };
-		00A1EFED1AA3919900F68AE6 /* CoreVokabular.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00A1EFEB1AA3919900F68AE6 /* CoreVokabular.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		00A7392119C47AD700475E11 /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A7391E19C47AD700475E11 /* TemplateIcon2x.png */; };
 		00A7392219C47AD700475E11 /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A7391E19C47AD700475E11 /* TemplateIcon2x.png */; };
 		00B604601A018A6F00243649 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B6045F1A018A6F00243649 /* AppDelegate.swift */; };
@@ -38,6 +47,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 0028D0B3199EA87B00342453;
 			remoteInfo = Vokabular;
+		};
+		00297D7D1AAC4BE20085D3DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0028D0AC199EA87B00342453 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 00297D741AAC4BE20085D3DE;
+			remoteInfo = "Export to Vokabular";
 		};
 		00B6046D1A018A7000243649 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -55,25 +71,38 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				007364FE1A22365400AAEF31 /* CoreVokabularOSX.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		00FEEC3B19FFC18100192CE6 /* Embed Frameworks */ = {
+		007856781C4BA08E009FAE7B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				00A1EFED1AA3919900F68AE6 /* CoreVokabular.framework in Embed Frameworks */,
+				007856771C4BA08E009FAE7B /* CoreVokabular.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00B147901AAA6C1900ED68B1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				00297D7F1AAC4BE20085D3DE /* Export to Vokabular.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		000A11401C4079E60089DC60 /* PageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		000A11461C41A1B90089DC60 /* LessonCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonCellTableViewCell.swift; sourceTree = "<group>"; };
+		000A11491C41B4D60089DC60 /* WordDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordDetailsViewController.swift; sourceTree = "<group>"; };
 		0028D0B4199EA87B00342453 /* Vokabular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vokabular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0028D0B8199EA87B00342453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0028D0B9199EA87B00342453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,12 +112,20 @@
 		0028D0C6199EA87B00342453 /* VokabularTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VokabularTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0028D0CB199EA87B00342453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0028D0CC199EA87B00342453 /* VokabularTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VokabularTests.swift; sourceTree = "<group>"; };
+		00297D751AAC4BE20085D3DE /* Export to Vokabular.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Export to Vokabular.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00297D781AAC4BE20085D3DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00297D791AAC4BE20085D3DE /* ActionRequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionRequestHandler.swift; sourceTree = "<group>"; };
+		00297D7B1AAC4BE20085D3DE /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
+		00297D951AACBFD20085D3DE /* Vokabular.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Vokabular.entitlements; sourceTree = "<group>"; };
+		00297D961AACC01A0085D3DE /* Export to Vokabular.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Export to Vokabular.entitlements"; sourceTree = "<group>"; };
+		004B18B21ABDFE5100F70961 /* Vokabular_OSXTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Vokabular_OSXTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		004B18B31ABDFE5200F70961 /* BSLessonSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSLessonSelectorViewController.swift; sourceTree = "<group>"; };
+		005359431AB71B8E009F763E /* Vokabular.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Vokabular.xcodeproj; path = "/Users/borja/code/Objective-C/Vokabular copy/Vokabular.xcodeproj"; sourceTree = "<absolute>"; };
 		006DE57F19D75C7A006D7A2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		007364FC1A22365400AAEF31 /* CoreVokabularOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreVokabularOSX.framework; sourceTree = "<group>"; };
+		007856751C4BA08E009FAE7B /* CoreVokabular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = CoreVokabular.framework; path = "/Users/borja/Library/Developer/Xcode/DerivedData/VokabularWorkspace-byzckeecsfwhaxcpjpybjbvamtzi/Build/Products/Debug-iphoneos/CoreVokabular.framework"; sourceTree = "<absolute>"; };
 		007C6CDB1A10FC7C00A6C5C0 /* BSMainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSMainWindowController.swift; sourceTree = "<group>"; };
 		0090303019D71DFA00849265 /* LineGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineGraphViewController.swift; sourceTree = "<group>"; };
 		0094FF6D19BB4680004CEACE /* TestSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestSelectorViewController.swift; sourceTree = "<group>"; };
-		00A1EFEB1AA3919900F68AE6 /* CoreVokabular.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreVokabular.framework; sourceTree = "<group>"; };
 		00A7391E19C47AD700475E11 /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
 		00B6045B1A018A6F00243649 /* Vokabular .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vokabular .app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00B6045E1A018A6F00243649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,7 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				006DE58019D75C7A006D7A2F /* UIKit.framework in Frameworks */,
-				00A1EFEC1AA3919900F68AE6 /* CoreVokabular.framework in Frameworks */,
+				007856761C4BA08E009FAE7B /* CoreVokabular.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,11 +155,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		00297D721AAC4BE20085D3DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		00B604581A018A6F00243649 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				007364FD1A22365400AAEF31 /* CoreVokabularOSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,13 +182,12 @@
 		0028D0AB199EA87B00342453 = {
 			isa = PBXGroup;
 			children = (
-				00A1EFEB1AA3919900F68AE6 /* CoreVokabular.framework */,
-				007364FC1A22365400AAEF31 /* CoreVokabularOSX.framework */,
-				006DE57F19D75C7A006D7A2F /* UIKit.framework */,
+				005359441AB71B8E009F763E /* Frameworks */,
 				0028D0B6199EA87B00342453 /* Vokabular */,
 				0028D0C9199EA87B00342453 /* VokabularTests */,
 				00B6045C1A018A6F00243649 /* Vokabular_OSX */,
 				00B6046F1A018A7000243649 /* Vokabular_OSXTests */,
+				00297D761AAC4BE20085D3DE /* Export to Vokabular */,
 				0028D0B5199EA87B00342453 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -157,6 +199,7 @@
 				0028D0C6199EA87B00342453 /* VokabularTests.xctest */,
 				00B6045B1A018A6F00243649 /* Vokabular .app */,
 				00B6046C1A018A6F00243649 /* Vokabular_OSXTests.xctest */,
+				00297D751AAC4BE20085D3DE /* Export to Vokabular.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,6 +207,7 @@
 		0028D0B6199EA87B00342453 /* Vokabular */ = {
 			isa = PBXGroup;
 			children = (
+				00297D951AACBFD20085D3DE /* Vokabular.entitlements */,
 				0028D0D8199EA8A100342453 /* Views */,
 				0028D0B9199EA87B00342453 /* AppDelegate.swift */,
 				0028D0BD199EA87B00342453 /* Main.storyboard */,
@@ -203,10 +247,48 @@
 			isa = PBXGroup;
 			children = (
 				0028D0BB199EA87B00342453 /* TestViewController.swift */,
+				000A11461C41A1B90089DC60 /* LessonCellTableViewCell.swift */,
 				0094FF6D19BB4680004CEACE /* TestSelectorViewController.swift */,
 				0090303019D71DFA00849265 /* LineGraphViewController.swift */,
+				000A11401C4079E60089DC60 /* PageViewController.swift */,
+				000A11491C41B4D60089DC60 /* WordDetailsViewController.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		00297D761AAC4BE20085D3DE /* Export to Vokabular */ = {
+			isa = PBXGroup;
+			children = (
+				00297D961AACC01A0085D3DE /* Export to Vokabular.entitlements */,
+				00297D791AAC4BE20085D3DE /* ActionRequestHandler.swift */,
+				00297D7B1AAC4BE20085D3DE /* Action.js */,
+				00297D771AAC4BE20085D3DE /* Supporting Files */,
+			);
+			path = "Export to Vokabular";
+			sourceTree = "<group>";
+		};
+		00297D771AAC4BE20085D3DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00297D781AAC4BE20085D3DE /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		005359441AB71B8E009F763E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				007856751C4BA08E009FAE7B /* CoreVokabular.framework */,
+				006DE57F19D75C7A006D7A2F /* UIKit.framework */,
+				005359431AB71B8E009F763E /* Vokabular.xcodeproj */,
+			);
+			name = Frameworks;
+			path = Vokabular.xcodeproj;
+			sourceTree = "<group>";
+		};
+		005359521ABAFE59009F763E /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		00B6045C1A018A6F00243649 /* Vokabular_OSX */ = {
@@ -215,9 +297,11 @@
 				00B6045F1A018A6F00243649 /* AppDelegate.swift */,
 				007C6CDB1A10FC7C00A6C5C0 /* BSMainWindowController.swift */,
 				00B604611A018A6F00243649 /* ViewController.swift */,
+				004B18B31ABDFE5200F70961 /* BSLessonSelectorViewController.swift */,
 				00B604631A018A6F00243649 /* Images.xcassets */,
 				00B604651A018A6F00243649 /* Main.storyboard */,
 				00B6045D1A018A6F00243649 /* Supporting Files */,
+				004B18B21ABDFE5100F70961 /* Vokabular_OSXTests-Bridging-Header.h */,
 			);
 			path = Vokabular_OSX;
 			sourceTree = "<group>";
@@ -257,11 +341,13 @@
 				0028D0B0199EA87B00342453 /* Sources */,
 				0028D0B1199EA87B00342453 /* Frameworks */,
 				0028D0B2199EA87B00342453 /* Resources */,
-				00FEEC3B19FFC18100192CE6 /* Embed Frameworks */,
+				00B147901AAA6C1900ED68B1 /* Embed App Extensions */,
+				007856781C4BA08E009FAE7B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				00297D7E1AAC4BE20085D3DE /* PBXTargetDependency */,
 			);
 			name = Vokabular;
 			productName = Vokabular;
@@ -285,6 +371,23 @@
 			productName = VokabularTests;
 			productReference = 0028D0C6199EA87B00342453 /* VokabularTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		00297D741AAC4BE20085D3DE /* Export to Vokabular */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00297D801AAC4BE20085D3DE /* Build configuration list for PBXNativeTarget "Export to Vokabular" */;
+			buildPhases = (
+				00297D711AAC4BE20085D3DE /* Sources */,
+				00297D721AAC4BE20085D3DE /* Frameworks */,
+				00297D731AAC4BE20085D3DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Export to Vokabular";
+			productName = "Export to Vokabular";
+			productReference = 00297D751AAC4BE20085D3DE /* Export to Vokabular.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 		00B6045A1A018A6F00243649 /* Vokabular  */ = {
 			isa = PBXNativeTarget;
@@ -328,15 +431,32 @@
 		0028D0AC199EA87B00342453 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Borja Arias Drake";
 				TargetAttributes = {
 					0028D0B3199EA87B00342453 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = HDWMV7DY5P;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					0028D0C5199EA87B00342453 = {
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = 0028D0B3199EA87B00342453;
+					};
+					00297D741AAC4BE20085D3DE = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = HDWMV7DY5P;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					00B6045A1A018A6F00243649 = {
 						CreatedOnToolsVersion = 6.1;
@@ -358,12 +478,19 @@
 			mainGroup = 0028D0AB199EA87B00342453;
 			productRefGroup = 0028D0B5199EA87B00342453 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 005359521ABAFE59009F763E /* Products */;
+					ProjectRef = 005359431AB71B8E009F763E /* Vokabular.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				0028D0B3199EA87B00342453 /* Vokabular */,
 				0028D0C5199EA87B00342453 /* VokabularTests */,
 				00B6045A1A018A6F00243649 /* Vokabular  */,
 				00B6046B1A018A6F00243649 /* Vokabular_OSXTests */,
+				00297D741AAC4BE20085D3DE /* Export to Vokabular */,
 			);
 		};
 /* End PBXProject section */
@@ -384,6 +511,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				00A7392219C47AD700475E11 /* TemplateIcon2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00297D731AAC4BE20085D3DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00297D7C1AAC4BE20085D3DE /* Action.js in Resources */,
+				004B18B61ABFF06A00F70961 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,9 +547,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0094FF6E19BB4680004CEACE /* TestSelectorViewController.swift in Sources */,
+				000A114A1C41B4D60089DC60 /* WordDetailsViewController.swift in Sources */,
+				000A11411C4079E60089DC60 /* PageViewController.swift in Sources */,
 				0090303119D71DFA00849265 /* LineGraphViewController.swift in Sources */,
 				0028D0BC199EA87B00342453 /* TestViewController.swift in Sources */,
 				0028D0BA199EA87B00342453 /* AppDelegate.swift in Sources */,
+				000A11471C41A1B90089DC60 /* LessonCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,9 +561,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				0090303219D71DFA00849265 /* LineGraphViewController.swift in Sources */,
+				000A114B1C41B4D60089DC60 /* WordDetailsViewController.swift in Sources */,
+				000A11421C4079E60089DC60 /* PageViewController.swift in Sources */,
 				0028D0CD199EA87B00342453 /* VokabularTests.swift in Sources */,
 				0094FF6F19BB4680004CEACE /* TestSelectorViewController.swift in Sources */,
 				0013C85A19BC5E0E0034C233 /* TestViewController.swift in Sources */,
+				000A11481C41A1B90089DC60 /* LessonCellTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		00297D711AAC4BE20085D3DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00297D7A1AAC4BE20085D3DE /* ActionRequestHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +582,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				004B18B41ABDFE5200F70961 /* BSLessonSelectorViewController.swift in Sources */,
 				00B604621A018A6F00243649 /* ViewController.swift in Sources */,
 				007C6CDC1A10FC7C00A6C5C0 /* BSMainWindowController.swift in Sources */,
 				00B604601A018A6F00243649 /* AppDelegate.swift in Sources */,
@@ -452,6 +603,11 @@
 			isa = PBXTargetDependency;
 			target = 0028D0B3199EA87B00342453 /* Vokabular */;
 			targetProxy = 0028D0C7199EA87B00342453 /* PBXContainerItemProxy */;
+		};
+		00297D7E1AAC4BE20085D3DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 00297D741AAC4BE20085D3DE /* Export to Vokabular */;
+			targetProxy = 00297D7D1AAC4BE20085D3DE /* PBXContainerItemProxy */;
 		};
 		00B6046E1A018A7000243649 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -500,6 +656,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -564,10 +721,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Vokabular/Vokabular.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vokabular",
 					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/CoreVokabular-abfatztpxydfmzadynrtoophpjwt/Build/Products/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Vokabular/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -576,7 +738,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boasoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -585,10 +749,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = Vokabular/Vokabular.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vokabular",
 					"$(PROJECT_DIR)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/CoreVokabular-abfatztpxydfmzadynrtoophpjwt/Build/Products/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Vokabular/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -597,7 +766,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boasoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -623,6 +794,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boasoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vokabular.app/Vokabular";
 			};
@@ -646,8 +818,49 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boasoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vokabular.app/Vokabular";
+			};
+			name = Release;
+		};
+		00297D811AAC4BE20085D3DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "Export to Vokabular/Export to Vokabular.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Export to Vokabular/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boasoftware.Vokabular.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		00297D821AAC4BE20085D3DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_ENTITLEMENTS = "Export to Vokabular/Export to Vokabular.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Export to Vokabular/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boasoftware.Vokabular.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -668,6 +881,7 @@
 				INFOPLIST_FILE = Vokabular_OSX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boasoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -687,6 +901,7 @@
 				INFOPLIST_FILE = Vokabular_OSX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boasoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 			};
@@ -696,6 +911,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -709,8 +925,11 @@
 				INFOPLIST_FILE = Vokabular_OSXTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boasoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Vokabular_OSX/Vokabular_OSXTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vokabular_OSX.app/Contents/MacOS/Vokabular_OSX";
 			};
 			name = Debug;
@@ -719,6 +938,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -729,8 +949,10 @@
 				INFOPLIST_FILE = Vokabular_OSXTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boasoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "Vokabular_OSX/Vokabular_OSXTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vokabular_OSX.app/Contents/MacOS/Vokabular_OSX";
 			};
 			name = Release;
@@ -761,6 +983,15 @@
 			buildConfigurations = (
 				0028D0D4199EA87B00342453 /* Debug */,
 				0028D0D5199EA87B00342453 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00297D801AAC4BE20085D3DE /* Build configuration list for PBXNativeTarget "Export to Vokabular" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00297D811AAC4BE20085D3DE /* Debug */,
+				00297D821AAC4BE20085D3DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

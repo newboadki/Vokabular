@@ -15,9 +15,9 @@ class TestSelectorViewController: UITableViewController
     let index : NSArray
     
     
-    required init(coder aDecoder: NSCoder)
+    required init?(coder aDecoder: NSCoder)
     {
-        self.index = WordParser.lessonsIndexArray()
+        self.index = WordParser.lessonsIndexArrayWithIndexFileName("index")
         super.init(coder:aDecoder)
     }
 
@@ -26,16 +26,17 @@ class TestSelectorViewController: UITableViewController
     {
         super.viewDidLoad()
         self.title = "Izaberi"
-
     }
 
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
     
-        
+
     }
 
+    
+    
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int
@@ -51,31 +52,36 @@ class TestSelectorViewController: UITableViewController
     
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath)
     {
-        var lesson : NSDictionary = (self.index[indexPath.row] as! NSDictionary)
-        cell.textLabel?.text = (lesson["displayName"] as! String)
+        let lessonCell = cell as! LessonCellTableViewCell
+        let lesson : NSDictionary = (self.index[indexPath.row] as! NSDictionary)
+        lessonCell.lessonTitle?.text = (lesson["displayName"] as! String)
     }
     
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as! UITableViewCell
-
-        // Configure the cell...
-
-        return cell
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    {
+        return tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
     }
     
-
 
 
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        
-        let selectedCell = sender as! UITableViewCell
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!)
+    {
+        let selectedCell = sender.superview?!.superview?.superview as! UITableViewCell
         let indexPath = self.tableView.indexPathForCell(selectedCell)
-        let myVC = segue.destinationViewController as! TestViewController
-        myVC.selectedLesson = (self.index[indexPath!.row] as! Dictionary<String, String>)
+        
+        if segue.identifier?.compare("showList") == .OrderedSame
+        {
+            let nextViewController = segue.destinationViewController as! PageViewController
+            nextViewController.selectedLesson = (self.index[indexPath!.row] as! Dictionary<String, String>)
+        }
+        else if segue.identifier?.compare("showTest") == .OrderedSame
+        {
+            let nextViewController = segue.destinationViewController as! TestViewController
+            nextViewController.selectedLesson = (self.index[indexPath!.row] as! Dictionary<String, String>)
+        }        
     }
 
 

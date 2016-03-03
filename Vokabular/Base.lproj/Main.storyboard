@@ -95,7 +95,13 @@
                             <outlet property="delegate" destination="B93-Ma-cbi" id="s9m-pn-qX2"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="DvK-IN-5Nc"/>
+                    <navigationItem key="navigationItem" id="DvK-IN-5Nc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="956-gF-3Cd">
+                            <connections>
+                                <action selector="handleDelete:" destination="B93-Ma-cbi" id="Xh3-hA-C3N"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x8x-5s-uTg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,15 +131,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="qC2-9Y-HZx">
-                                <rect key="frame" x="20" y="109" width="560" height="86"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="qC2-9Y-HZx">
+                                <rect key="frame" x="20" y="153" width="560" height="86"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Istraživanje" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIX-fn-dg9">
-                                        <rect key="frame" x="187" y="0.0" width="187" height="43"/>
-                                        <fontDescription key="fontDescription" name="Palatino-Italic" family="Palatino" pointSize="39"/>
-                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EMN-Mu-hhW">
+                                        <rect key="frame" x="172" y="0.0" width="217" height="43"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="600" verticalHuggingPriority="600" text="Istraživanje" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIX-fn-dg9">
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="43"/>
+                                                <fontDescription key="fontDescription" name="Palatino-Italic" family="Palatino" pointSize="39"/>
+                                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" horizontalHuggingPriority="500" verticalHuggingPriority="500" translatesAutoresizingMaskIntoConstraints="NO" id="9BP-CJ-ie4" customClass="WordTypeView" customModule="Vokabular" customModuleProvider="target">
+                                                <rect key="frame" x="197" y="12" width="20" height="20"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" tag="333" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="n" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4KO-QX-pzD">
+                                                        <rect key="frame" x="5" y="1" width="10" height="18"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.76394164360000005" green="0.46781933190000002" blue="0.67169698" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="77M-Ez-88d"/>
+                                                    <constraint firstAttribute="height" constant="20" id="GyC-LZ-PF3"/>
+                                                    <constraint firstItem="4KO-QX-pzD" firstAttribute="centerX" secondItem="9BP-CJ-ie4" secondAttribute="centerX" id="bfT-ED-MiR"/>
+                                                    <constraint firstItem="4KO-QX-pzD" firstAttribute="centerY" secondItem="9BP-CJ-ie4" secondAttribute="centerY" id="geO-sU-9c2"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" red="0.38925049049999999" green="0.12816587939999999" blue="0.6787163329" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWitdth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="text" value="A"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="textLabel" destination="4KO-QX-pzD" id="7PK-K6-2uM"/>
+                                                </connections>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Investigation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="COI-ZM-a4x">
                                         <rect key="frame" x="223" y="62" width="115" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -155,6 +199,7 @@
                     <connections>
                         <outlet property="translationLabel" destination="COI-ZM-a4x" id="u3L-yx-Wi2"/>
                         <outlet property="wordLabel" destination="lIX-fn-dg9" id="ehF-f4-iM5"/>
+                        <outlet property="wordTypeView" destination="9BP-CJ-ie4" id="BRr-fi-O11"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9jX-Ob-NtI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -195,11 +240,11 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SJz-8j-2Ox">
-                                <rect key="frame" x="0.0" y="72" width="600" height="98"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SJz-8j-2Ox">
+                                <rect key="frame" x="0.0" y="72" width="600" height="108"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tocno" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAW-V4-B0Z">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="34"/>
+                                        <rect key="frame" x="269" y="0.0" width="63" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="GGh-ns-egn"/>
                                         </constraints>
@@ -207,17 +252,29 @@
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="aUx-9J-ANi">
-                                        <rect key="frame" x="0.0" y="34" width="600" height="39"/>
-                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Palatino-Italic" family="Palatino" pointSize="35"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="done"/>
-                                        <connections>
-                                            <outlet property="delegate" destination="ObY-do-Ldn" id="S6b-4T-J7p"/>
-                                        </connections>
-                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="O4o-0e-JxK">
+                                        <rect key="frame" x="284" y="39" width="33" height="39"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="aUx-9J-ANi">
+                                                <rect key="frame" x="0.0" y="0.0" width="13" height="39"/>
+                                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Palatino-Italic" family="Palatino" pointSize="35"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="done"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="ObY-do-Ldn" id="S6b-4T-J7p"/>
+                                                </connections>
+                                            </textField>
+                                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark-flat" translatesAutoresizingMaskIntoConstraints="NO" id="wOP-dE-YZm">
+                                                <rect key="frame" x="13" y="10" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="5S6-OT-gHm"/>
+                                                    <constraint firstAttribute="width" constant="20" id="CH3-sa-sUy"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correct" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHk-Fk-vR3">
-                                        <rect key="frame" x="0.0" y="73" width="600" height="25"/>
+                                        <rect key="frame" x="262" y="83" width="77" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="bY5-Oe-ZWz"/>
                                         </constraints>
@@ -257,6 +314,7 @@
                         <barButtonItem key="rightBarButtonItem" title="14/39" id="3ca-bf-5Sf"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="checkMark" destination="wOP-dE-YZm" id="a1o-I6-I9e"/>
                         <outlet property="correctSolutionLabel" destination="YHk-Fk-vR3" id="2BI-QM-vOt"/>
                         <outlet property="finalWordTextField" destination="aUx-9J-ANi" id="ZVe-Zz-hxZ"/>
                         <outlet property="originalWordLabel" destination="lAW-V4-B0Z" id="Fso-lK-dQ3"/>
@@ -268,4 +326,7 @@
             <point key="canvasLocation" x="3582" y="-340.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="checkmark-flat" width="256" height="256"/>
+    </resources>
 </document>

@@ -40,10 +40,12 @@
 			<key>NSExtensionServiceRoleType</key>
 			<string>NSExtensionServiceRoleTypeViewer</string>
 		</dict>
+		<key>NSExtensionMainStoryboard</key>
+		<string>extensionInterface</string>
 		<key>NSExtensionPointIdentifier</key>
-		<string>com.apple.services</string>
-		<key>NSExtensionPrincipalClass</key>
-		<string>$(PRODUCT_MODULE_NAME).ActionRequestHandler</string>
+		<string>com.apple.ui-services</string>
+		<key>NSExtensionActionWantsFullScreenPresentation</key>
+		<false/>
 	</dict>
 </dict>
 </plist>

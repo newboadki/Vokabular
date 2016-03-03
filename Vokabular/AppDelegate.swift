@@ -34,20 +34,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(application: UIApplication)
     {
-        let sharedUserDefault : NSUserDefaults? = NSUserDefaults(suiteName: "group.vokabular.extension")
-        
-        if let safeUserDefaults = NSUserDefaults(suiteName: "group.vokabular.extension")
+        if let userDefaults = NSUserDefaults(suiteName: "group.vokabular.extension")
         {
-            // Retrieve import
-            let textArray : Array<String>? = (safeUserDefaults.objectForKey("lastImports") as! Array<String>?)
-            
-            if let safeTextArray = textArray
+            if var exportedLists = (userDefaults.objectForKey("lastImports") as! Dictionary<String , [String]>?)
             {
-                // Store
-                let (_, _) = WordParser.storeLinesIntoImportedFile(safeTextArray)
+                for (title, words) in exportedLists
+                {
+                    // Store
+                    let (_, _) = WordParser.storeLinesIntoImportedFile(title, lines: words)
+                    
+                    // Delete from shared user default
+                    exportedLists.removeValueForKey(title) // this is considered mutating, therefore the reference is declared as VAR. might have to do with the Dictionary being value type
+                }
                 
-                // Delete from shared user default
-                sharedUserDefault?.removeObjectForKey("lastImports")
+                userDefaults.setObject(exportedLists, forKey: "lastImports") // this is not considered mutating, therefore the reference is declared as LET. Might have to do with  reference type of nsuserdefault
             }
         }
     }

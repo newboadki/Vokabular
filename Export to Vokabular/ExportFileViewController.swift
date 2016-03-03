@@ -1,37 +1,42 @@
 //
-//  ActionRequestHandler.swift
-//  Export to Vokabular
+//  ExportFileViewController.swift
+//  Vokabular
 //
-//  Created by Borja Arias Drake on 08/03/15.
-//  Copyright (c) 2015 Borja Arias Drake. All rights reserved.
+//  Created by Borja Arias Drake on 25/01/16.
+//  Copyright © 2016 Borja Arias Drake. All rights reserved.
 //
 
 import UIKit
 import MobileCoreServices
 
-/* Man cla f a xtenion ithout UI*/
-class ActionRequestHandler: NSObject, NSExtensionRequestHandling
-{    
-    var extensionContext: NSExtensionContext?
+class ExportFileViewController: UIViewController {
+    //var extensionContext: NSExtensionContext?
+
     
-    func beginRequestWithExtensionContext(context: NSExtensionContext)
-    {
-        // Do not call super in an Action extension with no user interface
-        
-        self.extensionContext = context
-        
-        let textItem = self.extensionContext!.inputItems[0] as! NSExtensionItem
-        
-        let textItemProvider = textItem.attachments![0] as! NSItemProvider
-        
-        if textItemProvider.hasItemConformingToTypeIdentifier(kUTTypeText as String)
-        {
-            textItemProvider.loadItemForTypeIdentifier(kUTTypeText as String, options: nil, completionHandler: { (text, error) -> Void in
-                //self.handleCompletion(text, error: error)
-            })
-        }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+    
+
     func handleCompletion(string: NSSecureCoding!, error: NSError!)
     {
         var inputString : String? = string as? String
@@ -40,13 +45,13 @@ class ActionRequestHandler: NSObject, NSExtensionRequestHandling
         // PARSE
         inputString = inputString?.stringByReplacingOccurrencesOfString("<html>", withString: "", options: [], range: nil)
         inputString = inputString?.stringByReplacingOccurrencesOfString("</html>", withString: "", options: [], range: nil)
-
+        
         inputString = inputString?.stringByReplacingOccurrencesOfString("<head>", withString: "", options: [], range: nil)
         inputString = inputString?.stringByReplacingOccurrencesOfString("</head>", withString: "", options: [], range: nil)
-
+        
         inputString = inputString?.stringByReplacingOccurrencesOfString("<body>", withString: "", options: [], range: nil)
         inputString = inputString?.stringByReplacingOccurrencesOfString("</body>", withString: "", options: [], range: nil)
-
+        
         inputString = inputString?.stringByReplacingOccurrencesOfString("<div>", withString: "", options: [], range: nil)
         
         
@@ -59,17 +64,17 @@ class ActionRequestHandler: NSObject, NSExtensionRequestHandling
         // SHARE WITH CONTAINING APP
         let sharedUserDefault : NSUserDefaults? = NSUserDefaults(suiteName: "group.vokabular.extension")
         sharedUserDefault!.setObject(components, forKey: "lastImports")
-
-    
-
+        
+        
+        
         // THIS IS A TEST TO OPEN THE HOST APP
         //A Today widget (and no other app extension type) can ask the system to open its containing app by calling the openURL:completionHandler: method of the NSExtensionContext class.
         // self.extensionContext?.openURL(NSURL(string: "vk://")!, completionHandler: { (success) -> Void in
         //})
-
+        
         // MARK AS COMPLETED
-        self.extensionContext!.completeRequestReturningItems([], completionHandler: nil)
-        self.extensionContext = nil // Don't hold on to this after we finished with it.
+    self.extensionContext!.completeRequestReturningItems([], completionHandler: nil)
+        //self.extensionContext = nil // Don't hold on to this after we finished with it.
     }
 
 }

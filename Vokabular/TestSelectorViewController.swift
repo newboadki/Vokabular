@@ -12,7 +12,7 @@ import CoreVokabular
 class TestSelectorViewController: UITableViewController
 {
 
-    let index : NSArray
+    var index : NSArray
     
     
     required init?(coder aDecoder: NSCoder)
@@ -20,19 +20,33 @@ class TestSelectorViewController: UITableViewController
         self.index = WordParser.lessonsIndexArrayWithIndexFileName("index")
         super.init(coder:aDecoder)
     }
-
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         self.title = "Izaberi"
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "preferredContentSizeChanged:", name: UIContentSizeCategoryDidChangeNotification, object: nil)
+
     }
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
+        self.index = WordParser.lessonsIndexArrayWithIndexFileName("index")
+        self.tableView.reloadData()
+
+    }
+
+    
+    func preferredContentSizeChanged(notif : NSNotification) {
+        self.view.needsUpdateConstraints()
+    }
+    
 
     override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
-    
-
     }
 
     
@@ -83,6 +97,14 @@ class TestSelectorViewController: UITableViewController
             nextViewController.selectedLesson = (self.index[indexPath!.row] as! Dictionary<String, String>)
         }        
     }
-
+    
+    // MARK: - IB action
+    
+    @IBAction func handleDelete(sender: UIBarButtonItem) {
+        WordParser.deleteContentsOfImportedFiles()
+        self.index = WordParser.lessonsIndexArrayWithIndexFileName("index")
+        self.tableView.reloadData()
+    }
+    
 
 }

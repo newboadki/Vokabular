@@ -22,8 +22,6 @@
 		004B18B41ABDFE5200F70961 /* BSLessonSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004B18B31ABDFE5200F70961 /* BSLessonSelectorViewController.swift */; };
 		004B18B61ABFF06A00F70961 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0028D0C0199EA87B00342453 /* Images.xcassets */; };
 		006DE58019D75C7A006D7A2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006DE57F19D75C7A006D7A2F /* UIKit.framework */; };
-		007856761C4BA08E009FAE7B /* CoreVokabular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 007856751C4BA08E009FAE7B /* CoreVokabular.framework */; };
-		007856771C4BA08E009FAE7B /* CoreVokabular.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 007856751C4BA08E009FAE7B /* CoreVokabular.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		007C6CDC1A10FC7C00A6C5C0 /* BSMainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C6CDB1A10FC7C00A6C5C0 /* BSMainWindowController.swift */; };
 		0090303119D71DFA00849265 /* LineGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090303019D71DFA00849265 /* LineGraphViewController.swift */; };
 		0094FF6E19BB4680004CEACE /* TestSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094FF6D19BB4680004CEACE /* TestSelectorViewController.swift */; };
@@ -89,7 +87,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				007856771C4BA08E009FAE7B /* CoreVokabular.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -158,6 +155,8 @@
 		00B604711A018A7000243649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00B604721A018A7000243649 /* Vokabular_OSXTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vokabular_OSXTests.swift; sourceTree = "<group>"; };
 		00ECDD471C78B2B80038D37D /* WordTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordTypeView.swift; sourceTree = "<group>"; };
+		00FA01F81D13D22F00070E30 /* CoreVokabularOSX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVokabularOSX.framework; path = ../../CoreVokabular/build/Debug/CoreVokabularOSX.framework; sourceTree = "<group>"; };
+		00FA01FA1D13D28B00070E30 /* CoreVokabular.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVokabular.framework; path = "../../../../Library/Developer/Xcode/DerivedData/VokabularWorkspace-cklulgqrhxyqxjfmfonbzqyhcpfe/Build/Products/Debug-iphonesimulator/CoreVokabular.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +165,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				006DE58019D75C7A006D7A2F /* UIKit.framework in Frameworks */,
-				007856761C4BA08E009FAE7B /* CoreVokabular.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +311,8 @@
 		005359441AB71B8E009F763E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				00FA01FA1D13D28B00070E30 /* CoreVokabular.framework */,
+				00FA01F81D13D22F00070E30 /* CoreVokabularOSX.framework */,
 				007856751C4BA08E009FAE7B /* CoreVokabular.framework */,
 				006DE57F19D75C7A006D7A2F /* UIKit.framework */,
 				005359431AB71B8E009F763E /* Vokabular.xcodeproj */,
@@ -840,12 +840,13 @@
 				CODE_SIGN_ENTITLEMENTS = Vokabular/Vokabular.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vokabular",
 					"$(PROJECT_DIR)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/CoreVokabular-abfatztpxydfmzadynrtoophpjwt/Build/Products/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Vokabular/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -857,6 +858,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.boasoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
@@ -868,12 +870,13 @@
 				CODE_SIGN_ENTITLEMENTS = Vokabular/Vokabular.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vokabular",
 					"$(PROJECT_DIR)",
-					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/CoreVokabular-abfatztpxydfmzadynrtoophpjwt/Build/Products/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = Vokabular/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -885,6 +888,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.boasoftware.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};

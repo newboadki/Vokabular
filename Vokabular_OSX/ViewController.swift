@@ -32,7 +32,7 @@ class ViewController: NSViewController, TestExecutionDelegate
         self.title = self.selectedLesson!["displayName"]
         self.testManager = TestExecutionManager(delegate: self, selectedLesson:self.selectedLesson!)
         var originalWordTextFieldCell : NSTextFieldCell = self.originalWordLabel.cell() as NSTextFieldCell
-        var initialWord : CoreVokabularOSX.Word = self.testManager!.initialWord()!
+        var initialWord : CoreVokabularOSX.Word = self.testManager!.currentWord
         originalWordTextFieldCell.title = initialWord.name!
         
         NSNotificationCenter.defaultCenter().postNotificationName("kUserSubmittedCorrectAnswerNotification", object: nil, userInfo: ["kCount":self.testManager!.count, "kTotal":self.testManager!.total])

@@ -37,7 +37,7 @@ class ShareViewController: SLComposeServiceViewController {
         
         if textItemProvider.hasItemConformingToTypeIdentifier(kUTTypePlainText as String)
         {
-            textItemProvider.loadItemForTypeIdentifier(kUTTypePlainText as String, options: nil, completionHandler: { (text, error) -> Void in
+            textItemProvider.loadItem(forTypeIdentifier: kUTTypePlainText as String, options: nil, completionHandler: { (text, error) -> Void in
                 self.handleCompletion(text, error: error)
             })
         }
@@ -54,26 +54,26 @@ class ShareViewController: SLComposeServiceViewController {
         return []
     }
     
-    func handleCompletion(string: NSSecureCoding!, error: NSError!)
+    func handleCompletion(_ string: NSSecureCoding!, error: NSError!)
     {
         var inputString : String? = string as? String
         
         
         // PARSE
-        inputString = inputString?.stringByReplacingOccurrencesOfString("<html>", withString: "", options: [], range: nil)
-        inputString = inputString?.stringByReplacingOccurrencesOfString("</html>", withString: "", options: [], range: nil)
+        inputString = inputString?.replacingOccurrences(of: "<html>", with: "", options: [], range: nil)
+        inputString = inputString?.replacingOccurrences(of: "</html>", with: "", options: [], range: nil)
         
-        inputString = inputString?.stringByReplacingOccurrencesOfString("<head>", withString: "", options: [], range: nil)
-        inputString = inputString?.stringByReplacingOccurrencesOfString("</head>", withString: "", options: [], range: nil)
+        inputString = inputString?.replacingOccurrences(of: "<head>", with: "", options: [], range: nil)
+        inputString = inputString?.replacingOccurrences(of: "</head>", with: "", options: [], range: nil)
         
-        inputString = inputString?.stringByReplacingOccurrencesOfString("<body>", withString: "", options: [], range: nil)
-        inputString = inputString?.stringByReplacingOccurrencesOfString("</body>", withString: "", options: [], range: nil)
+        inputString = inputString?.replacingOccurrences(of: "<body>", with: "", options: [], range: nil)
+        inputString = inputString?.replacingOccurrences(of: "</body>", with: "", options: [], range: nil)
         
-        inputString = inputString?.stringByReplacingOccurrencesOfString("<div>", withString: "", options: [], range: nil)
+        inputString = inputString?.replacingOccurrences(of: "<div>", with: "", options: [], range: nil)
         
         
         // FILTER
-        var components = inputString?.componentsSeparatedByString("</div>")
+        var components = inputString?.components(separatedBy: "</div>")
         components = components?.filter({ (par : String) -> Bool in
             return (par != "")
         })
@@ -85,13 +85,13 @@ class ShareViewController: SLComposeServiceViewController {
 //        exportedLists[self.textView.text!] = components!
 //        sharedUserDefault!.setObject(exportedLists, forKey: "lastImports")
 
-        let sharedUserDefault : NSUserDefaults? = NSUserDefaults(suiteName: "group.vokabular.extension")
-        if var exportedLists = sharedUserDefault?.objectForKey("lastImports") as! Dictionary<String, [String]>? {
+        let sharedUserDefault : UserDefaults? = UserDefaults(suiteName: "group.vokabular.extension")
+        if var exportedLists = sharedUserDefault?.object(forKey: "lastImports") as! Dictionary<String, [String]>? {
             exportedLists[self.textView.text!] = components!
-            sharedUserDefault!.setObject(exportedLists, forKey: "lastImports")
+            sharedUserDefault!.set(exportedLists, forKey: "lastImports")
             
         } else {
-            sharedUserDefault!.setObject([:], forKey: "lastImports")
+            sharedUserDefault!.set([:], forKey: "lastImports")
             
         }
 
@@ -102,7 +102,7 @@ class ShareViewController: SLComposeServiceViewController {
         //})
         
         // MARK AS COMPLETED
-        self.extensionContext!.completeRequestReturningItems([], completionHandler: nil)
+        self.extensionContext!.completeRequest(returningItems: [], completionHandler: nil)
         //self.extensionContext = nil // Don't hold on to this after we finished with it.
     }
     

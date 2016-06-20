@@ -44,7 +44,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         {
             let word : CoreVokabular.Word = words[index]
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewControllerWithIdentifier("WordDetailsViewController") as! WordDetailsViewController
+            let vc = storyboard.instantiateViewController(withIdentifier: "WordDetailsViewController") as! WordDetailsViewController
             vc.page = index
             
             
@@ -54,7 +54,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         }
         
         self.navigationItem.rightBarButtonItem?.title = "\(self.currentIndex+1)/\(self.testManager!.total)"
-        self.setViewControllers([self.viewControllersList![0]], direction:.Forward, animated: true, completion: nil)
+        self.setViewControllers([self.viewControllersList![0]], direction:.forward, animated: true, completion: nil)
         
     }
 
@@ -66,7 +66,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
 
     // MARK: - UIPageViewControllerDataSource
     
-    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController?
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?
     {
         
         let currentVC = viewController as! WordDetailsViewController
@@ -81,7 +81,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
         }
     }
 
-    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController?
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?
     {
         let currentVC = viewController as! WordDetailsViewController
         if currentVC.page < self.testManager!.total-1 {
@@ -101,11 +101,11 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
     
     // MARK: TestManagerDelegate
     
-    func handleCorrectAnswerWithNextWord(theNextWord : CoreVokabular.Word?)
+    func handleCorrectAnswerWithNextWord(_ theNextWord : CoreVokabular.Word?)
     {
     }
     
-    func handleFailedAttemptWithCorrectAnswer(correctAnswer : String)
+    func handleFailedAttemptWithCorrectAnswer(_ correctAnswer : String)
     {
     }
 }

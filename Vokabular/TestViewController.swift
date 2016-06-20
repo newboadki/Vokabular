@@ -36,7 +36,7 @@ class TestViewController: UIViewController, TestExecutionDelegate
     }
     
     
-    override func viewWillAppear(animated: Bool)
+    override func viewWillAppear(_ animated: Bool)
     {
         super.viewWillAppear(animated);
         
@@ -55,7 +55,7 @@ class TestViewController: UIViewController, TestExecutionDelegate
     
     // MARK: TextField Delegate
     
-    func textFieldShouldReturn(textField: UITextField!) -> Bool
+    func textFieldShouldReturn(_ textField: UITextField!) -> Bool
     {
         self.testManager!.processGivenAnswer(self.finalWordTextField.text!)
         return true
@@ -64,20 +64,20 @@ class TestViewController: UIViewController, TestExecutionDelegate
     
     // MARK: TestManagerDelegate
     
-    func handleCorrectAnswerWithNextWord(theNextWord : CoreVokabular.Word?)
+    func handleCorrectAnswerWithNextWord(_ theNextWord : CoreVokabular.Word?)
     {
         
-        UIView.animateKeyframesWithDuration(0.7, delay: 0, options: .CalculationModeCubic, animations: { () -> Void in
+        UIView.animateKeyframes(withDuration: 0.7, delay: 0, options: .calculationModeCubic, animations: { () -> Void in
             
-            UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 0.7, animations: { () -> Void in
+            UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 0.7, animations: { () -> Void in
                 self.checkMark.alpha = 1
-                self.checkMark.transform = CGAffineTransformMakeScale(2, 2)
+                self.checkMark.transform = CGAffineTransform(scaleX: 2, y: 2)
                 
             });
             
-            UIView.addKeyframeWithRelativeStartTime(0.5, relativeDuration: 0.3, animations: { () -> Void in
+            UIView.addKeyframe(withRelativeStartTime: 0.5, relativeDuration: 0.3, animations: { () -> Void in
                 self.checkMark.alpha = 0
-                self.checkMark.transform = CGAffineTransformIdentity
+                self.checkMark.transform = CGAffineTransform.identity
                 
             });
             
@@ -106,20 +106,20 @@ class TestViewController: UIViewController, TestExecutionDelegate
 
     }
     
-    func handleFailedAttemptWithCorrectAnswer(correctAnswer : String)
+    func handleFailedAttemptWithCorrectAnswer(_ correctAnswer : String)
     {
         self.correctSolutionLabel.text = correctAnswer
         self.finalWordTextField.textColor = UIColor(red: 200.0/255.0, green: 12/255.0, blue: 80.0/255.0, alpha: 1.0)
         
-        UIView.animateKeyframesWithDuration(0.15, delay: 0, options: .Autoreverse, animations: { () -> Void in
+        UIView.animateKeyframes(withDuration: 0.15, delay: 0, options: .autoreverse, animations: { () -> Void in
             
-            UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 0.5, animations: { () -> Void in
+            UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 0.5, animations: { () -> Void in
                 var frame = self.finalWordTextField.frame
                 frame.origin.x -= 20
                 self.finalWordTextField.frame = frame
             });
             
-            UIView.addKeyframeWithRelativeStartTime(0.5, relativeDuration: 0.5, animations: { () -> Void in
+            UIView.addKeyframe(withRelativeStartTime: 0.5, relativeDuration: 0.5, animations: { () -> Void in
                 var frame = self.finalWordTextField.frame
                 frame.origin.x += 20
                 self.finalWordTextField.frame = frame

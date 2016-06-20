@@ -16,7 +16,7 @@ import UIKit
     {
         didSet
         {
-            self.layer.borderColor = borderColor?.CGColor
+            self.layer.borderColor = borderColor?.cgColor
         }
     }
         

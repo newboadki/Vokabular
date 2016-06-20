@@ -26,11 +26,11 @@ class TestSelectorViewController: UITableViewController
         super.viewDidLoad()
         self.title = "Izaberi"
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "preferredContentSizeChanged:", name: UIContentSizeCategoryDidChangeNotification, object: nil)
+        NotificationCenter.default().addObserver(self, selector: "preferredContentSizeChanged:", name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
 
     }
 
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
         self.index = WordParser.lessonsIndexArrayWithIndexFileName("index")
@@ -39,7 +39,7 @@ class TestSelectorViewController: UITableViewController
     }
 
     
-    func preferredContentSizeChanged(notif : NSNotification) {
+    func preferredContentSizeChanged(_ notif : Notification) {
         self.view.needsUpdateConstraints()
     }
     
@@ -53,54 +53,54 @@ class TestSelectorViewController: UITableViewController
     
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int
+    override func numberOfSections(in tableView: UITableView) -> Int
     {
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         return self.index.count
     }
 
     
-    override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath)
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)
     {
         let lessonCell = cell as! LessonCellTableViewCell
-        let lesson : NSDictionary = (self.index[indexPath.row] as! NSDictionary)
+        let lesson : NSDictionary = (self.index[(indexPath as NSIndexPath).row] as! NSDictionary)
         lessonCell.lessonTitle?.text = (lesson["displayName"] as! String)
     }
     
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        return tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
+        return tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath) as UITableViewCell
     }
     
 
 
     // MARK: - Navigation
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!)
+    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject!)
     {
         let selectedCell = sender.superview?!.superview?.superview as! UITableViewCell
-        let indexPath = self.tableView.indexPathForCell(selectedCell)
+        let indexPath = self.tableView.indexPath(for: selectedCell)
         
-        if segue.identifier?.compare("showList") == .OrderedSame
+        if segue.identifier?.compare("showList") == .orderedSame
         {
             let nextViewController = segue.destinationViewController as! PageViewController
-            nextViewController.selectedLesson = (self.index[indexPath!.row] as! Dictionary<String, String>)
+            nextViewController.selectedLesson = (self.index[(indexPath! as NSIndexPath).row] as! Dictionary<String, String>)
         }
-        else if segue.identifier?.compare("showTest") == .OrderedSame
+        else if segue.identifier?.compare("showTest") == .orderedSame
         {
             let nextViewController = segue.destinationViewController as! TestViewController
-            nextViewController.selectedLesson = (self.index[indexPath!.row] as! Dictionary<String, String>)
+            nextViewController.selectedLesson = (self.index[(indexPath! as NSIndexPath).row] as! Dictionary<String, String>)
         }        
     }
     
     // MARK: - IB action
     
-    @IBAction func handleDelete(sender: UIBarButtonItem) {
+    @IBAction func handleDelete(_ sender: UIBarButtonItem) {
         WordParser.deleteContentsOfImportedFiles()
         self.index = WordParser.lessonsIndexArrayWithIndexFileName("index")
         self.tableView.reloadData()

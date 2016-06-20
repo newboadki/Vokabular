@@ -27,18 +27,18 @@ class LessonCellTableViewCell: UITableViewCell
 //            exampleLabel.font = UIFont.PreferredBody;
 //            })
         
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "preferredContentSizeChanged:", name: UIContentSizeCategoryDidChangeNotification, object: nil)
+        NotificationCenter.default().addObserver(self, selector: "preferredContentSizeChanged:", name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
 
     }
 
-    func preferredContentSizeChanged(notif : NSNotification) {
-        self.lessonTitle.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody);
+    func preferredContentSizeChanged(_ notif : Notification) {
+        self.lessonTitle.font = UIFont.preferredFont(forTextStyle: UIFontTextStyleBody);
     }
 
     
     
     
-    override func setSelected(selected: Bool, animated: Bool)
+    override func setSelected(_ selected: Bool, animated: Bool)
     {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state

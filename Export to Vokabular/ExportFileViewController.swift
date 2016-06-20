@@ -37,33 +37,33 @@ class ExportFileViewController: UIViewController {
 
     
 
-    func handleCompletion(string: NSSecureCoding!, error: NSError!)
+    func handleCompletion(_ string: NSSecureCoding!, error: NSError!)
     {
         var inputString : String? = string as? String
         
         
         // PARSE
-        inputString = inputString?.stringByReplacingOccurrencesOfString("<html>", withString: "", options: [], range: nil)
-        inputString = inputString?.stringByReplacingOccurrencesOfString("</html>", withString: "", options: [], range: nil)
+        inputString = inputString?.replacingOccurrences(of: "<html>", with: "", options: [], range: nil)
+        inputString = inputString?.replacingOccurrences(of: "</html>", with: "", options: [], range: nil)
         
-        inputString = inputString?.stringByReplacingOccurrencesOfString("<head>", withString: "", options: [], range: nil)
-        inputString = inputString?.stringByReplacingOccurrencesOfString("</head>", withString: "", options: [], range: nil)
+        inputString = inputString?.replacingOccurrences(of: "<head>", with: "", options: [], range: nil)
+        inputString = inputString?.replacingOccurrences(of: "</head>", with: "", options: [], range: nil)
         
-        inputString = inputString?.stringByReplacingOccurrencesOfString("<body>", withString: "", options: [], range: nil)
-        inputString = inputString?.stringByReplacingOccurrencesOfString("</body>", withString: "", options: [], range: nil)
+        inputString = inputString?.replacingOccurrences(of: "<body>", with: "", options: [], range: nil)
+        inputString = inputString?.replacingOccurrences(of: "</body>", with: "", options: [], range: nil)
         
-        inputString = inputString?.stringByReplacingOccurrencesOfString("<div>", withString: "", options: [], range: nil)
+        inputString = inputString?.replacingOccurrences(of: "<div>", with: "", options: [], range: nil)
         
         
         // FILTER
-        var components = inputString?.componentsSeparatedByString("</div>")
+        var components = inputString?.components(separatedBy: "</div>")
         components = components?.filter({ (par : String) -> Bool in
             return (par != "")
         })
         
         // SHARE WITH CONTAINING APP
-        let sharedUserDefault : NSUserDefaults? = NSUserDefaults(suiteName: "group.vokabular.extension")
-        sharedUserDefault!.setObject(components, forKey: "lastImports")
+        let sharedUserDefault : UserDefaults? = UserDefaults(suiteName: "group.vokabular.extension")
+        sharedUserDefault!.set(components, forKey: "lastImports")
         
         
         
@@ -73,7 +73,7 @@ class ExportFileViewController: UIViewController {
         //})
         
         // MARK AS COMPLETED
-    self.extensionContext!.completeRequestReturningItems([], completionHandler: nil)
+    self.extensionContext!.completeRequest(returningItems: [], completionHandler: nil)
         //self.extensionContext = nil // Don't hold on to this after we finished with it.
     }
 

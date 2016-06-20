@@ -14,7 +14,7 @@ class ActionRequestHandler: NSObject, NSExtensionRequestHandling
 {
     var extensionContext: NSExtensionContext?
     
-    func beginRequestWithExtensionContext(context: NSExtensionContext)
+    func beginRequest(with context: NSExtensionContext)
     {
         // Do not call super in an Action extension with no user interface
         
@@ -26,39 +26,39 @@ class ActionRequestHandler: NSObject, NSExtensionRequestHandling
         
         if textItemProvider.hasItemConformingToTypeIdentifier(kUTTypeText as String)
         {
-            textItemProvider.loadItemForTypeIdentifier(kUTTypeText as String, options: nil, completionHandler: { (text, error) -> Void in
+            textItemProvider.loadItem(forTypeIdentifier: kUTTypeText as String, options: nil, completionHandler: { (text, error) -> Void in
                 self.handleCompletion(text, error: error)
             })
         }
     }
     
-    func handleCompletion(string: NSSecureCoding!, error: NSError!)
+    func handleCompletion(_ string: NSSecureCoding!, error: NSError!)
     {
         var inputString : String? = string as? String
         
         
         // PARSE
-        inputString = inputString?.stringByReplacingOccurrencesOfString("<html>", withString: "", options: [], range: nil)
-        inputString = inputString?.stringByReplacingOccurrencesOfString("</html>", withString: "", options: [], range: nil)
+        inputString = inputString?.replacingOccurrences(of: "<html>", with: "", options: [], range: nil)
+        inputString = inputString?.replacingOccurrences(of: "</html>", with: "", options: [], range: nil)
         
-        inputString = inputString?.stringByReplacingOccurrencesOfString("<head>", withString: "", options: [], range: nil)
-        inputString = inputString?.stringByReplacingOccurrencesOfString("</head>", withString: "", options: [], range: nil)
+        inputString = inputString?.replacingOccurrences(of: "<head>", with: "", options: [], range: nil)
+        inputString = inputString?.replacingOccurrences(of: "</head>", with: "", options: [], range: nil)
         
-        inputString = inputString?.stringByReplacingOccurrencesOfString("<body>", withString: "", options: [], range: nil)
-        inputString = inputString?.stringByReplacingOccurrencesOfString("</body>", withString: "", options: [], range: nil)
+        inputString = inputString?.replacingOccurrences(of: "<body>", with: "", options: [], range: nil)
+        inputString = inputString?.replacingOccurrences(of: "</body>", with: "", options: [], range: nil)
         
-        inputString = inputString?.stringByReplacingOccurrencesOfString("<div>", withString: "", options: [], range: nil)
+        inputString = inputString?.replacingOccurrences(of: "<div>", with: "", options: [], range: nil)
         
         
         // FILTER
-        var components = inputString?.componentsSeparatedByString("</div>")
+        var components = inputString?.components(separatedBy: "</div>")
         components = components?.filter({ (par : String) -> Bool in
             return (par != "")
         })
         
         // SHARE WITH CONTAINING APP
-        let sharedUserDefault : NSUserDefaults? = NSUserDefaults(suiteName: "group.vokabular.extension")
-        sharedUserDefault!.setObject(components, forKey: "lastImports")
+        let sharedUserDefault : UserDefaults? = UserDefaults(suiteName: "group.vokabular.extension")
+        sharedUserDefault!.set(components, forKey: "lastImports")
         
         
         
@@ -68,7 +68,7 @@ class ActionRequestHandler: NSObject, NSExtensionRequestHandling
         //})
         
         // MARK AS COMPLETED
-        self.extensionContext!.completeRequestReturningItems([], completionHandler: nil)
+        self.extensionContext!.completeRequest(returningItems: [], completionHandler: nil)
         self.extensionContext = nil // Don't hold on to this after we finished with it.
     }
     

@@ -13,7 +13,9 @@ class LessonCellTableViewCell: UITableViewCell
 
     // MARK: IB Outlets
     @IBOutlet weak var lessonTitle : UILabel!
-
+    @IBOutlet weak var vieButton: UIButton!
+    @IBOutlet weak var testButton: UIButton!
+    
     override func awakeFromNib()
     {
         super.awakeFromNib()
@@ -27,14 +29,42 @@ class LessonCellTableViewCell: UITableViewCell
 //            exampleLabel.font = UIFont.PreferredBody;
 //            })
         
-        NotificationCenter.default().addObserver(self, selector: "preferredContentSizeChanged:", name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
+        NotificationCenter.default().addObserver(self, selector: #selector(LessonCellTableViewCell.preferredContentSizeChanged(_:)), name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
 
     }
 
     func preferredContentSizeChanged(_ notif : Notification) {
-        self.lessonTitle.font = UIFont.preferredFont(forTextStyle: UIFontTextStyleBody);
+        if #available(iOS 9.0, *) {
+            self.lessonTitle.font = UIFont.preferredFont(forTextStyle: UIFontTextStyleTitle3)
+            self.vieButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyleCallout)
+            self.testButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyleCallout)
+            self.lessonTitle.setNeedsUpdateConstraints()
+            self.vieButton.setNeedsUpdateConstraints()
+            self.testButton.setNeedsUpdateConstraints()
+
+        } else {
+            // Fallback on earlier versions
+        };
+
+
     }
 
+//    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+//        if #available(iOS 9.0, *) {
+//            self.lessonTitle.font = UIFont.preferredFont(forTextStyle: UIFontTextStyleTitle3)
+//            self.vieButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyleCallout)
+//            self.testButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyleCallout)
+//
+//            self.lessonTitle.setNeedsDisplay()
+//            self.vieButton.setNeedsDisplay()
+//            self.testButton.setNeedsDisplay()
+//            
+//            
+//        } else {
+//            // Fallback on earlier versions
+//        }
+//
+//    }
     
     
     

@@ -32,7 +32,7 @@
             startingLineNumber = "112"
             endingLineNumber = "112"
             landmarkName = "handleFailedAttemptWithCorrectAnswer(_:)"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -63,7 +63,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "81"
             endingLineNumber = "81"
-            landmarkName = "pageViewController(pageViewController:viewControllerBeforeViewController:)"
+            landmarkName = "pageViewController(_:viewControllerBefore:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

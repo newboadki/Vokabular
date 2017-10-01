@@ -14,6 +14,12 @@ class TestSelectorViewController: UITableViewController
 
     var index : NSArray
     
+   
+    
+
+    
+    
+    
     
     required init?(coder aDecoder: NSCoder)
     {
@@ -26,7 +32,10 @@ class TestSelectorViewController: UITableViewController
         super.viewDidLoad()
         self.title = "Izaberi"
         
-        NotificationCenter.default().addObserver(self, selector: "preferredContentSizeChanged:", name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.estimatedRowHeight = 80
+        
+        NotificationCenter.default().addObserver(self, selector: #selector(TestSelectorViewController.preferredContentSizeChanged(_:)), name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
 
     }
 
@@ -41,6 +50,7 @@ class TestSelectorViewController: UITableViewController
     
     func preferredContentSizeChanged(_ notif : Notification) {
         self.view.needsUpdateConstraints()
+        
     }
     
 

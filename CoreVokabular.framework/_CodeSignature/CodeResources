@@ -14,23 +14,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		HrhcVgTOi8DsBYPvyaI8EqIYtZo=
+		35+5cxb7xVvfpEQZhMzUy/VLXAg=
 		</data>
-		<key>Modules/CoreVokabular.swiftmodule/i386.swiftdoc</key>
+		<key>Modules/CoreVokabular.swiftmodule/arm.swiftdoc</key>
 		<data>
-		oNFJFDiPyuV/u2qt1r5Hmq4B5Pg=
+		IC6lOkhVuENe8tFfeRTDx8wK2Os=
 		</data>
-		<key>Modules/CoreVokabular.swiftmodule/i386.swiftmodule</key>
+		<key>Modules/CoreVokabular.swiftmodule/arm.swiftmodule</key>
 		<data>
-		XGQC+/Y8WFAxaLXYhkGwKEtFcpg=
+		zTT4jJhq6RFj/lJ/0NLl3ZUn9Sk=
 		</data>
-		<key>Modules/CoreVokabular.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/CoreVokabular.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		y4v5kDGrBXqCrzqf3kjwHLct5Vk=
+		2Q8HFa8u5OdqrvsEhXiw8SeaVK4=
 		</data>
-		<key>Modules/CoreVokabular.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/CoreVokabular.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		lQABm9O1x+pDpRcD2PfwljpDj+0=
+		3lIoEsV3Dg7fMIoTUNoq8a4Gka0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -117,48 +117,48 @@
 			5kdhGyC9IyjqMKQQQ7fcMs/8UXaZXwc8u5j0PODSC0A=
 			</data>
 		</dict>
-		<key>Modules/CoreVokabular.swiftmodule/i386.swiftdoc</key>
+		<key>Modules/CoreVokabular.swiftmodule/arm.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oNFJFDiPyuV/u2qt1r5Hmq4B5Pg=
+			IC6lOkhVuENe8tFfeRTDx8wK2Os=
 			</data>
 			<key>hash2</key>
 			<data>
-			hJXfxkbT7hUvlOnGlUTAy8yFCWNKggTsv2jk6cSsDR8=
+			uzv5+/ZLaA2fFp21GaV53LU4+hqEmNE71yJ/w8ygJvI=
 			</data>
 		</dict>
-		<key>Modules/CoreVokabular.swiftmodule/i386.swiftmodule</key>
+		<key>Modules/CoreVokabular.swiftmodule/arm.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			XGQC+/Y8WFAxaLXYhkGwKEtFcpg=
+			zTT4jJhq6RFj/lJ/0NLl3ZUn9Sk=
 			</data>
 			<key>hash2</key>
 			<data>
-			gRqbT37CwvHcqTVaQNpyxiO9lgypHOKC45q89AAZ8s8=
+			3e0T1X6mnEM3xRYitbjoHw+SOyLSRWrxCBJE1dh+AKg=
 			</data>
 		</dict>
-		<key>Modules/CoreVokabular.swiftmodule/x86_64.swiftdoc</key>
+		<key>Modules/CoreVokabular.swiftmodule/arm64.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			y4v5kDGrBXqCrzqf3kjwHLct5Vk=
+			2Q8HFa8u5OdqrvsEhXiw8SeaVK4=
 			</data>
 			<key>hash2</key>
 			<data>
-			AH18o9BmgmbS07W7jnbEKwbiU7xH4L5TYtiqWL/MjcM=
+			BLxDQLvJSNK1qsl1URqK/yLUuh0eoTHh+04iBmM07dg=
 			</data>
 		</dict>
-		<key>Modules/CoreVokabular.swiftmodule/x86_64.swiftmodule</key>
+		<key>Modules/CoreVokabular.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			lQABm9O1x+pDpRcD2PfwljpDj+0=
+			3lIoEsV3Dg7fMIoTUNoq8a4Gka0=
 			</data>
 			<key>hash2</key>
 			<data>
-			ydK2Tk0klFk+0xd53dYFagibRoyJV9TPL+Z6FH8bglw=
+			phUNPEX1HYjTmJHoUjrvTg6WWMf+K3hDUxuT8hLJ84Y=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

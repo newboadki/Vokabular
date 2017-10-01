@@ -17,12 +17,12 @@
 		00297D7A1AAC4BE20085D3DE /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00297D791AAC4BE20085D3DE /* ActionRequestHandler.swift */; };
 		00297D7C1AAC4BE20085D3DE /* Action.js in Resources */ = {isa = PBXBuildFile; fileRef = 00297D7B1AAC4BE20085D3DE /* Action.js */; };
 		00297D7F1AAC4BE20085D3DE /* Export to Vokabular.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 00297D751AAC4BE20085D3DE /* Export to Vokabular.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		004024941D17C69C0004AD97 /* CoreVokabular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 004024931D17C69C0004AD97 /* CoreVokabular.framework */; };
-		004024951D17C6D10004AD97 /* CoreVokabular.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 004024931D17C69C0004AD97 /* CoreVokabular.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		00409E281C558B0E000416D4 /* extensionInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00409E271C558B0E000416D4 /* extensionInterface.storyboard */; };
 		00409E2A1C56B9B5000416D4 /* ExportFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00409E291C56B9B5000416D4 /* ExportFileViewController.swift */; };
 		004B18B41ABDFE5200F70961 /* BSLessonSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004B18B31ABDFE5200F70961 /* BSLessonSelectorViewController.swift */; };
 		004B18B61ABFF06A00F70961 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0028D0C0199EA87B00342453 /* Images.xcassets */; };
+		0064889B1D1812E40017E4FF /* CoreVokabular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0064889A1D1812E40017E4FF /* CoreVokabular.framework */; };
+		0064889C1D1813660017E4FF /* CoreVokabular.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0064889A1D1812E40017E4FF /* CoreVokabular.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		006DE58019D75C7A006D7A2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006DE57F19D75C7A006D7A2F /* UIKit.framework */; };
 		007C6CDC1A10FC7C00A6C5C0 /* BSMainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C6CDB1A10FC7C00A6C5C0 /* BSMainWindowController.swift */; };
 		0090303119D71DFA00849265 /* LineGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090303019D71DFA00849265 /* LineGraphViewController.swift */; };
@@ -89,7 +89,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				004024951D17C6D10004AD97 /* CoreVokabular.framework in Embed Frameworks */,
+				0064889C1D1813660017E4FF /* CoreVokabular.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -127,12 +127,12 @@
 		00297D7B1AAC4BE20085D3DE /* Action.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Action.js; sourceTree = "<group>"; };
 		00297D951AACBFD20085D3DE /* Vokabular.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Vokabular.entitlements; sourceTree = "<group>"; };
 		00297D961AACC01A0085D3DE /* Export to Vokabular.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Export to Vokabular.entitlements"; sourceTree = "<group>"; };
-		004024931D17C69C0004AD97 /* CoreVokabular.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreVokabular.framework; sourceTree = SOURCE_ROOT; };
 		00409E271C558B0E000416D4 /* extensionInterface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = extensionInterface.storyboard; sourceTree = "<group>"; };
 		00409E291C56B9B5000416D4 /* ExportFileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExportFileViewController.swift; sourceTree = "<group>"; };
 		004B18B21ABDFE5100F70961 /* Vokabular_OSXTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Vokabular_OSXTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		004B18B31ABDFE5200F70961 /* BSLessonSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSLessonSelectorViewController.swift; sourceTree = "<group>"; };
 		005359431AB71B8E009F763E /* Vokabular.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Vokabular.xcodeproj; path = "/Users/borja/code/Objective-C/Vokabular copy/Vokabular.xcodeproj"; sourceTree = "<absolute>"; };
+		0064889A1D1812E40017E4FF /* CoreVokabular.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreVokabular.framework; sourceTree = SOURCE_ROOT; };
 		006DE57F19D75C7A006D7A2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		007C6CDB1A10FC7C00A6C5C0 /* BSMainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSMainWindowController.swift; sourceTree = "<group>"; };
 		0090303019D71DFA00849265 /* LineGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineGraphViewController.swift; sourceTree = "<group>"; };
@@ -166,7 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				006DE58019D75C7A006D7A2F /* UIKit.framework in Frameworks */,
-				004024941D17C69C0004AD97 /* CoreVokabular.framework in Frameworks */,
+				0064889B1D1812E40017E4FF /* CoreVokabular.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +313,7 @@
 		005359441AB71B8E009F763E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				004024931D17C69C0004AD97 /* CoreVokabular.framework */,
+				0064889A1D1812E40017E4FF /* CoreVokabular.framework */,
 				006DE57F19D75C7A006D7A2F /* UIKit.framework */,
 				005359431AB71B8E009F763E /* Vokabular.xcodeproj */,
 			);

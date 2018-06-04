@@ -14,7 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                             
     var window: UIWindow?
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
+    @nonobjc func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject : AnyObject]?) -> Bool {
+        
         return true
     }
 
@@ -41,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 for (title, words) in exportedLists
                 {
                     // Store
-                    let (_, _) = WordParser.storeLinesIntoImportedFile(title, lines: words)
+                    let (_, _) = FileSystemHelper.storeLinesIntoImportedFile(title, lines: words, directoryName: "importedVokabularFiles")
                     
                     // Delete from shared user default
                     exportedLists.removeValue(forKey: title) // this is considered mutating, therefore the reference is declared as VAR. might have to do with the Dictionary being value type

@@ -12,18 +12,13 @@ import CoreVokabular
 class TestSelectorViewController: UITableViewController
 {
 
-    var index : NSArray
+    var index : Array<[String : String]>
     
    
-    
 
-    
-    
-    
-    
     required init?(coder aDecoder: NSCoder)
     {
-        self.index = WordParser.lessonsIndexArrayWithIndexFileName("index")
+        self.index = WordParser().lessonsIndex
         super.init(coder:aDecoder)
     }
     
@@ -35,22 +30,18 @@ class TestSelectorViewController: UITableViewController
         self.tableView.rowHeight = UITableViewAutomaticDimension
         self.tableView.estimatedRowHeight = 80
         
-        NotificationCenter.default().addObserver(self, selector: #selector(TestSelectorViewController.preferredContentSizeChanged(_:)), name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(TestSelectorViewController.preferredContentSizeChanged(_:)), name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
 
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
-        self.index = WordParser.lessonsIndexArrayWithIndexFileName("index")
         self.tableView.reloadData()
-
     }
 
     
-    func preferredContentSizeChanged(_ notif : Notification) {
+    @objc func preferredContentSizeChanged(_ notif : Notification) {
         self.view.needsUpdateConstraints()
-        
     }
     
 
@@ -77,8 +68,8 @@ class TestSelectorViewController: UITableViewController
     override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)
     {
         let lessonCell = cell as! LessonCellTableViewCell
-        let lesson : NSDictionary = (self.index[(indexPath as NSIndexPath).row] as! NSDictionary)
-        lessonCell.lessonTitle?.text = (lesson["displayName"] as! String)
+        let lesson = (self.index[(indexPath as NSIndexPath).row])
+        lessonCell.lessonTitle?.text = (lesson["displayName"])
     }
     
     
@@ -91,28 +82,29 @@ class TestSelectorViewController: UITableViewController
 
     // MARK: - Navigation
 
-    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject!)
-    {
-        let selectedCell = sender.superview?!.superview?.superview as! UITableViewCell
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let view = sender as! UIView
+        let selectedCell = view.superview?.superview?.superview as! UITableViewCell
         let indexPath = self.tableView.indexPath(for: selectedCell)
-        
+
         if segue.identifier?.compare("showList") == .orderedSame
         {
-            let nextViewController = segue.destinationViewController as! PageViewController
-            nextViewController.selectedLesson = (self.index[(indexPath! as NSIndexPath).row] as! Dictionary<String, String>)
+            let nextViewController = segue.destination as! PageViewController
+            nextViewController.selectedLesson = (self.index[(indexPath! as NSIndexPath).row])
         }
         else if segue.identifier?.compare("showTest") == .orderedSame
         {
-            let nextViewController = segue.destinationViewController as! TestViewController
-            nextViewController.selectedLesson = (self.index[(indexPath! as NSIndexPath).row] as! Dictionary<String, String>)
-        }        
+            let nextViewController = segue.destination as! TestViewController
+            nextViewController.selectedLesson = (self.index[(indexPath! as NSIndexPath).row])
+        }
+
     }
     
     // MARK: - IB action
     
     @IBAction func handleDelete(_ sender: UIBarButtonItem) {
-        WordParser.deleteContentsOfImportedFiles()
-        self.index = WordParser.lessonsIndexArrayWithIndexFileName("index")
+        FileSystemHelper.deleteContentsOf(directoryName: "importedVokabularFiles")        
+        self.index = WordParser().lessonsIndex
         self.tableView.reloadData()
     }
     

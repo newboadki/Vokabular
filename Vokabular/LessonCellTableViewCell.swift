@@ -29,15 +29,15 @@ class LessonCellTableViewCell: UITableViewCell
 //            exampleLabel.font = UIFont.PreferredBody;
 //            })
         
-        NotificationCenter.default().addObserver(self, selector: #selector(LessonCellTableViewCell.preferredContentSizeChanged(_:)), name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(LessonCellTableViewCell.preferredContentSizeChanged(_:)), name: NSNotification.Name.UIContentSizeCategoryDidChange, object: nil)
 
     }
 
-    func preferredContentSizeChanged(_ notif : Notification) {
+    @objc func preferredContentSizeChanged(_ notif : Notification) {
         if #available(iOS 9.0, *) {
-            self.lessonTitle.font = UIFont.preferredFont(forTextStyle: UIFontTextStyleTitle3)
-            self.vieButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyleCallout)
-            self.testButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyleCallout)
+            self.lessonTitle.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.title3)
+            self.vieButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.callout)
+            self.testButton.titleLabel?.font = UIFont.preferredFont(forTextStyle: UIFontTextStyle.callout)
             self.lessonTitle.setNeedsUpdateConstraints()
             self.vieButton.setNeedsUpdateConstraints()
             self.testButton.setNeedsUpdateConstraints()

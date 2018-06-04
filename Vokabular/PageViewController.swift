@@ -23,7 +23,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
     var selectedLesson : Dictionary<String, String>?
     var viewControllersList : Array<UIViewController>?
     var currentIndex : Int = 0
-    
+
     
     // MARK: View life-cycle
     
@@ -70,7 +70,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
     {
         
         let currentVC = viewController as! WordDetailsViewController
-        if currentVC.page > 0 {
+        if currentVC.page! > 0 {
             self.currentIndex = self.currentIndex - 1
             self.navigationItem.rightBarButtonItem?.title = "\(self.currentIndex)/\(self.testManager!.total)"
             
@@ -84,7 +84,7 @@ class PageViewController: UIPageViewController, UIPageViewControllerDelegate, UI
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?
     {
         let currentVC = viewController as! WordDetailsViewController
-        if currentVC.page < self.testManager!.total-1 {
+        if currentVC.page! < self.testManager!.total-1 {
             self.currentIndex = self.currentIndex + 1
             self.navigationItem.rightBarButtonItem?.title = "\(self.currentIndex)/\(self.testManager!.total)"
             

@@ -28,6 +28,8 @@
 	<string>1</string>
 	<key>NSExtension</key>
 	<dict>
+		<key>NSExtensionActionWantsFullScreenPresentation</key>
+		<false/>
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>NSExtensionActivationRule</key>
@@ -44,8 +46,6 @@
 		<string>extensionInterface</string>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.ui-services</string>
-		<key>NSExtensionActionWantsFullScreenPresentation</key>
-		<false/>
 	</dict>
 </dict>
 </plist>

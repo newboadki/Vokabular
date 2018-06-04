@@ -37,9 +37,12 @@ class ShareViewController: SLComposeServiceViewController {
         
         if textItemProvider.hasItemConformingToTypeIdentifier(kUTTypePlainText as String)
         {
-            textItemProvider.loadItem(forTypeIdentifier: kUTTypePlainText as String, options: nil, completionHandler: { (text, error) -> Void in
-                self.handleCompletion(text, error: error)
-            })
+            let block: NSItemProvider.CompletionHandler = { (coding, error) in
+                self.handleCompletion(coding, error: NSError(domain: "", code: 1, userInfo: nil))
+            }
+            textItemProvider.loadItem(forTypeIdentifier: kUTTypePlainText as String, options: nil, completionHandler: block)
+            
+            
         }
         
         
@@ -48,8 +51,8 @@ class ShareViewController: SLComposeServiceViewController {
     override func loadPreviewView() -> UIView! {
         return nil
     }
-    
-    override func configurationItems() -> [AnyObject]! {
+        
+    override func configurationItems() -> [Any]! {
         // To add configuration options via table cells at the bottom of the sheet, return an array of SLComposeSheetConfigurationItem here.
         return []
     }

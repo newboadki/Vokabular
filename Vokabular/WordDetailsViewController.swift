@@ -24,8 +24,8 @@ class WordDetailsViewController: UIViewController
         
         self.wordLabel.text = self.wordText
         self.translationLabel.text = self.translationText
-        self.wordTypeView.borderColor = UIColor.purple().withAlphaComponent(0.6)
-        self.wordTypeView.backgroundColor = UIColor.purple().withAlphaComponent(0.3)
+        self.wordTypeView.borderColor = UIColor.purple.withAlphaComponent(0.6)
+        self.wordTypeView.backgroundColor = UIColor.purple.withAlphaComponent(0.3)
         self.wordTypeView.cornerRadius = 4
         self.wordTypeView.text = "n"
         self.wordTypeView.alpha = 0

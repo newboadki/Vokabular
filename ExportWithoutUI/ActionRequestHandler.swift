@@ -28,7 +28,7 @@ class ActionRequestHandler: NSObject, NSExtensionRequestHandling
         {
             textItemProvider.loadItem(forTypeIdentifier: kUTTypeText as String, options: nil, completionHandler: { (text, error) -> Void in
                 self.handleCompletion(text, error: error)
-            })
+                } as! NSItemProvider.CompletionHandler)
         }
     }
     

@@ -21,11 +21,10 @@
 		00409E2A1C56B9B5000416D4 /* ExportFileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00409E291C56B9B5000416D4 /* ExportFileViewController.swift */; };
 		004B18B41ABDFE5200F70961 /* BSLessonSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004B18B31ABDFE5200F70961 /* BSLessonSelectorViewController.swift */; };
 		004B18B61ABFF06A00F70961 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0028D0C0199EA87B00342453 /* Images.xcassets */; };
-		0064889B1D1812E40017E4FF /* CoreVokabular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0064889A1D1812E40017E4FF /* CoreVokabular.framework */; };
-		0064889C1D1813660017E4FF /* CoreVokabular.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0064889A1D1812E40017E4FF /* CoreVokabular.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0069F6FF20C45EA1003BEA84 /* CoreVokabular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0069F6FE20C45EA1003BEA84 /* CoreVokabular.framework */; };
+		0069F70020C45EA1003BEA84 /* CoreVokabular.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0069F6FE20C45EA1003BEA84 /* CoreVokabular.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		006DE58019D75C7A006D7A2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006DE57F19D75C7A006D7A2F /* UIKit.framework */; };
 		007C6CDC1A10FC7C00A6C5C0 /* BSMainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007C6CDB1A10FC7C00A6C5C0 /* BSMainWindowController.swift */; };
-		0090303119D71DFA00849265 /* LineGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090303019D71DFA00849265 /* LineGraphViewController.swift */; };
 		0094FF6E19BB4680004CEACE /* TestSelectorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0094FF6D19BB4680004CEACE /* TestSelectorViewController.swift */; };
 		00A7392119C47AD700475E11 /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00A7391E19C47AD700475E11 /* TemplateIcon2x.png */; };
 		00B55E4E1C5D01410059930F /* ActionRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B55E4D1C5D01410059930F /* ActionRequestHandler.swift */; };
@@ -73,23 +72,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		0069F70120C45EA1003BEA84 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0069F70020C45EA1003BEA84 /* CoreVokabular.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		007364FF1A22365400AAEF31 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		007856781C4BA08E009FAE7B /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				0064889C1D1813660017E4FF /* CoreVokabular.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +132,7 @@
 		004B18B31ABDFE5200F70961 /* BSLessonSelectorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSLessonSelectorViewController.swift; sourceTree = "<group>"; };
 		005359431AB71B8E009F763E /* Vokabular.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Vokabular.xcodeproj; path = "/Users/borja/code/Objective-C/Vokabular copy/Vokabular.xcodeproj"; sourceTree = "<absolute>"; };
 		0064889A1D1812E40017E4FF /* CoreVokabular.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreVokabular.framework; sourceTree = SOURCE_ROOT; };
+		0069F6FE20C45EA1003BEA84 /* CoreVokabular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreVokabular.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		006DE57F19D75C7A006D7A2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		007C6CDB1A10FC7C00A6C5C0 /* BSMainWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BSMainWindowController.swift; sourceTree = "<group>"; };
 		0090303019D71DFA00849265 /* LineGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineGraphViewController.swift; sourceTree = "<group>"; };
@@ -166,7 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				006DE58019D75C7A006D7A2F /* UIKit.framework in Frameworks */,
-				0064889B1D1812E40017E4FF /* CoreVokabular.framework in Frameworks */,
+				0069F6FF20C45EA1003BEA84 /* CoreVokabular.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +211,7 @@
 		0028D0AB199EA87B00342453 = {
 			isa = PBXGroup;
 			children = (
+				0069F6FE20C45EA1003BEA84 /* CoreVokabular.framework */,
 				00B55E4C1C5D01410059930F /* ExportWithoutUI */,
 				00B55E5D1C5D081D0059930F /* ShareWords */,
 				005359441AB71B8E009F763E /* Frameworks */,
@@ -399,7 +400,7 @@
 				0028D0B1199EA87B00342453 /* Frameworks */,
 				0028D0B2199EA87B00342453 /* Resources */,
 				00B147901AAA6C1900ED68B1 /* Embed App Extensions */,
-				007856781C4BA08E009FAE7B /* Embed Frameworks */,
+				0069F70120C45EA1003BEA84 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -508,13 +509,13 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Borja Arias Drake";
 				TargetAttributes = {
 					0028D0B3199EA87B00342453 = {
 						CreatedOnToolsVersion = 6.0;
 						DevelopmentTeam = HDWMV7DY5P;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0930;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -524,7 +525,7 @@
 					00297D741AAC4BE20085D3DE = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = HDWMV7DY5P;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0930;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -534,7 +535,7 @@
 					00B55E4A1C5D01410059930F = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = HDWMV7DY5P;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0930;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -544,7 +545,7 @@
 					00B55E5B1C5D081D0059930F = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = HDWMV7DY5P;
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0930;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -652,7 +653,6 @@
 				0094FF6E19BB4680004CEACE /* TestSelectorViewController.swift in Sources */,
 				000A114A1C41B4D60089DC60 /* WordDetailsViewController.swift in Sources */,
 				000A11411C4079E60089DC60 /* PageViewController.swift in Sources */,
-				0090303119D71DFA00849265 /* LineGraphViewController.swift in Sources */,
 				0028D0BC199EA87B00342453 /* TestViewController.swift in Sources */,
 				0028D0BA199EA87B00342453 /* AppDelegate.swift in Sources */,
 				00ECDD481C78B2B80038D37D /* WordTypeView.swift in Sources */,
@@ -764,13 +764,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -779,6 +789,7 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -808,13 +819,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -822,6 +843,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -831,6 +853,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -839,14 +862,15 @@
 		0028D0D1199EA87B00342453 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Vokabular/Vokabular.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HDWMV7DY5P;
 				DYLIB_CURRENT_VERSION = 1;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vokabular",
@@ -859,10 +883,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.boasoftware.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boasoftware.Vokabular;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -870,14 +895,15 @@
 		0028D0D2199EA87B00342453 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Vokabular/Vokabular.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HDWMV7DY5P;
 				DYLIB_CURRENT_VERSION = 1;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Vokabular",
@@ -890,10 +916,11 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.boasoftware.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.boasoftware.Vokabular;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -906,6 +933,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Export to Vokabular/Export to Vokabular.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HDWMV7DY5P;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -913,11 +941,12 @@
 				INFOPLIST_FILE = "Export to Vokabular/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.boasoftware.Vokabular.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boasoftware.Vokabular.Export-to-Vokabular";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -929,14 +958,16 @@
 				CODE_SIGN_ENTITLEMENTS = "Export to Vokabular/Export to Vokabular.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HDWMV7DY5P;
 				INFOPLIST_FILE = "Export to Vokabular/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.boasoftware.Vokabular.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.boasoftware.Vokabular.Export-to-Vokabular";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -947,6 +978,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = HDWMV7DY5P;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = ExportWithoutUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
@@ -955,7 +987,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -967,6 +1000,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = HDWMV7DY5P;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = ExportWithoutUI/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
@@ -975,7 +1009,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -986,6 +1021,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = HDWMV7DY5P;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = ShareWords/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
@@ -994,7 +1030,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -1006,6 +1043,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = HDWMV7DY5P;
 				GCC_NO_COMMON_BLOCKS = YES;
 				INFOPLIST_FILE = ShareWords/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
@@ -1014,7 +1052,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
